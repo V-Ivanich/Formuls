@@ -81,19 +81,3 @@ document.querySelector('.result-2').addEventListener('click', () => {
     console.log(miD);
     document.querySelector('.metka-2').innerHTML = 'Результат =  ' + (ress) + ' +' + (maS.toFixed(2));
 })
-
-example_array = [["Name","Age"],["Antonio","35"]];
-
-function array_to_table(my_array) {
-    my_table_html = '<table>';
-    for(var i =0; i <table my_array.length; i++){
-        my_table_html +="<tr>";
-        for(var j = 0; j < my_array[i].length; j++){
-            my_table_html +="<td>" + my_array[i][j] + "</td>";
-        }
-        my_table_html += "</tr>";
-    }
-    my_table_html += '</table>';
-    document.getElementById("mytable").innerHTML = my_table_html;
-}
-array_to_table(example_array);

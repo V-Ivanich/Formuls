@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,22 @@
     <title>Формулы для работы!</title>
     <link rel="stylesheet" href="style-2.css">
 </head>
+
 <body>
     <main>
         <h2>Пересчет цвета относительно диаметра.</h2>
         <div class="block-1">
-            
+
             <input type="text" class="diamDet" value="0">
             <label for="">Диаметр 1</label>
             <br>
-            <input type="text"  class="diamProb" value="0">
+            <input type="text" class="diamProb" value="0">
             <label for="">Диаметр 2</label>
             <br>
-            <input type="text"  class="nDet" value="0">
+            <input type="text" class="nDet" value="0">
             <label for="">Цвет 1</label>
             <br>
-            <input type="text"  class="nProb" value="0">
+            <input type="text" class="nProb" value="0">
             <label for="">Цвет 2</label>
             <br>
             <button class="result-1">Расчет</button>
@@ -29,7 +31,7 @@
         </div>
         <h2>Расчет плоской фаски.</h2>
         <div class="block-2">
-            
+
             <input type="text" id="diaDet" value="0">
             <label for="diaDet">Диаметр детали</label>
             <br>
@@ -37,7 +39,7 @@
             <label for="maxDet">верхний допуск</label>
             <br>
             <input type="text" id="minDet" value="0">
-            <label for="minDet">нижний допуск</label>      
+            <label for="minDet">нижний допуск</label>
             <br>
             <hr>
             <input type="text" id="diaSvet" value="0">
@@ -47,297 +49,317 @@
             <label for="maxSvet">верхний допуск</label>
             <br>
             <input type="text" id="minSvet" value="0">
-           <label for="minSvet">нижний допуск</label>
-           <br>
-            <button class="result-2" >Расчет</button>
+            <label for="minSvet">нижний допуск</label>
+            <br>
+            <button class="result-2">Расчет</button>
             <label for="" class="metka-2 lab">Результат = </label>
         </div>
 
         <h2>Расчет плоских блоков</h2>
-        <div class="block-3">          
+        <div class="block-3">
 
             <label class="lab-1">Кол-во деталей</label>
-           
+
             <label class="lab-2">Диаметр детали</label>
-             
+
             <input type="checkbox" id="chek">
             <label for="chek" class="lab-3">Диаметр блока</label>
-                      
-                <input type="text" class="inp-1">
-                
-                <input type="text" class="inp-2">
-                
-                <input type="text" class="inp-3">            
+
+            <input type="text" class="inp-1">
+
+            <input type="text" class="inp-2">
+
+            <input type="text" class="inp-3">
 
             <button class="rezult">Расчет</button>
-           
+
             <button class="sbros">Сброс</button>
 
-            </div>
+        </div>
         </div>
 
-            <div class="tabl">
-            <table><!-- первая таблица -->
+        <div class="tabl">
+            <table>
+                <!-- первая таблица -->
 
                 <caption>Вариант -1</caption>
                 <colgroup>
-                    <col span="1" style="background:Khaki"><!-- С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы-->
+                    <col span="1" style="background:Khaki">
+                    <!-- С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы-->
                     <col span="2" style="background-color:LightCyan">
-                    <col span="1" style="background-color:Khaki"><!-- Задаем цвет фона для следующего (одного) столбца таблицы-->
-                  </colgroup>
-                <tr><td>Ряд</td><td>Кол-во</td><td>Всего</td><td>Диаметр</td></tr>
+                    <col span="1" style="background-color:Khaki">
+                    <!-- Задаем цвет фона для следующего (одного) столбца таблицы-->
+                </colgroup>
                 <tr>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td>Ряд</td>
+                    <td>Кол-во</td>
+                    <td>Всего</td>
+                    <td>Диаметр</td>
                 </tr>
                 <tr>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td id="t1r1c1">1</td>
+                    <td id="t1r1c2">0</td>
+                    <td id="t1r1c3">0</td>
+                    <td id="t1r1c4" value="0">0</td>
                 </tr>
                 <tr>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td id="t1r2c1">2</td>
+                    <td id="t1r2c2">0</td>
+                    <td id="t1r2c3">0</td>
+                    <td id="t1r2c4" value="0">0</td>
                 </tr>
                 <tr>
-                    <td>4</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td id="t1r3c1">3</td>
+                    <td id="t1r3c2">0</td>
+                    <td id="t1r3c3">0</td>
+                    <td id="t1r3c4" value="0">0</td>
                 </tr>
                 <tr>
-                    <td>5</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td id="t1r4c1">4</td>
+                    <td id="t1r4c2">0</td>
+                    <td id="t1r4c3">0</td>
+                    <td id="t1r4c4" value="0">0</td>
                 </tr>
                 <tr>
-                    <td>6</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td id="t1r5c1">5</td>
+                    <td id="t1r5c2">0</td>
+                    <td id="t1r5c3">0</td>
+                    <td id="t1r5c4" value="0">0</td>
                 </tr>
                 <tr>
-                    <td>7</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td id="t1r6c1">6</td>
+                    <td id="t1r6c2">0</td>
+                    <td id="t1r6c3">0</td>
+                    <td id="t1r6c4" value="0">0</td>
                 </tr>
                 <tr>
-                    <td>8</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td id="t1r7c1">7</td>
+                    <td id="t1r7c2">0</td>
+                    <td id="t1r7c3">0</td>
+                    <td id="t1r7c4" value="0">0</td>
                 </tr>
                 <tr>
-                    <td>9</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td id="t1r8c1">8</td>
+                    <td id="t1r8c2">0</td>
+                    <td id="t1r8c3">0</td>
+                    <td id="t1r8c4" value="0">0</td>
                 </tr>
                 <tr>
-                    <td>10</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td id="t1r9c1">9</td>
+                    <td id="t1r9c2">0</td>
+                    <td id="t1r9c3">0</td>
+                    <td id="t1r9c4" value="0">0</td>
                 </tr>
                 <tr>
-                    <td>11</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td id="t1r10c1">10</td>
+                    <td id="t1r10c2">0</td>
+                    <td id="t1r10c3">0</td>
+                    <td id="t1r10c4" value="0">0</td>
                 </tr>
                 <tr>
-                    <td>12</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td id="t1r11c1">11</td>
+                    <td id="t1r11c2">0</td>
+                    <td id="t1r11c3">0</td>
+                    <td id="t1r11c4" value="0">0</td>
+                </tr>
+                <tr>
+                    <td id="t1r12c1">12</td>
+                    <td id="t1r12c2">0</td>
+                    <td id="t1r12c3">0</td>
+                    <td id="t1r12c4" value="0">0</td>
                 </tr>
 
             </table>
 
-            <table><!-- вторая таблица -->
+            <table>
+                <!-- вторая таблица -->
 
                 <caption>Вариант -2</caption>
                 <colgroup>
-                    <col span="1" style="background:Khaki"><!-- С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы-->
+                    <col span="1" style="background:Khaki">
+                    <!-- С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы-->
                     <col span="2" style="background-color:LightCyan">
-                    <col span="1" style="background-color:Khaki"><!-- Задаем цвет фона для следующего (одного) столбца таблицы-->
-                  </colgroup>
-                <tr><td>Ряд</td><td>Кол-во</td><td>Всего</td><td>Диаметр</td></tr>
+                    <col span="1" style="background-color:Khaki">
+                    <!-- Задаем цвет фона для следующего (одного) столбца таблицы-->
+                </colgroup>
+                <tr>
+                    <td>Ряд</td>
+                    <td>Кол-во</td>
+                    <td>Всего</td>
+                    <td>Диаметр</td>
+                </tr>
                 <tr>
                     <td>1</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
                 <tr>
                     <td>4</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
                 <tr>
                     <td>5</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
                 <tr>
                     <td>6</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
                 <tr>
                     <td>7</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
                 <tr>
                     <td>8</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
                 <tr>
                     <td>9</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
                 <tr>
                     <td>10</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
                 <tr>
                     <td>11</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
                 <tr>
                     <td>12</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
 
             </table>
 
-            <table><!-- третья таблица -->
+            <table>
+                <!-- третья таблица -->
 
                 <caption>Вариант -3</caption>
                 <colgroup>
-                    <col span="1" style="background:Khaki"><!-- С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы-->
+                    <col span="1" style="background:Khaki">
+                    <!-- С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы-->
                     <col span="2" style="background-color:LightCyan">
-                    <col span="1" style="background-color:Khaki"><!-- Задаем цвет фона для следующего (одного) столбца таблицы-->
-                  </colgroup>
+                    <col span="1" style="background-color:Khaki">
+                    <!-- Задаем цвет фона для следующего (одного) столбца таблицы-->
+                </colgroup>
                 <tr>
-                    <td>Ряд</td><td>Кол-во</td><td>Всего</td><td>Диаметр</td>
+                    <td>Ряд</td>
+                    <td>Кол-во</td>
+                    <td>Всего</td>
+                    <td>Диаметр</td>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
                 <tr>
                     <td>4</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
                 <tr>
                     <td>5</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
                 <tr>
                     <td>6</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
                 <tr>
                     <td>7</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
                 <tr>
                     <td>8</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
                 <tr>
                     <td>9</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
                 <tr>
                     <td>10</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
                 <tr>
                     <td>11</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
                 <tr>
                     <td>12</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td value="0">0</td>
                 </tr>
 
             </table>
 
-             </div>
+        </div>
 
-             <div id="mytable">
-              
-             </div>
 
     </main>
     <script src="script-2.js"></script>
 </body>
+
 </html>
