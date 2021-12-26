@@ -1,0 +1,128 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: rgb(60, 61, 61);
+    font-family: 'Roboto';
+}
+
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+h2 {
+    margin-left: 50px;
+    margin-top: 5px;
+}
+#mytable {
+    background-color: darkgreen;
+    height: 100%;
+}
+.block-1 {
+    background-color: coral;
+    padding: 10px 20px;
+    height: 1fr;
+}
+.block-3, .tabl {
+    background-color: darkgoldenrod;
+    padding: 10px 20px;
+}
+
+input {
+    width: 50px;
+    background-color: rgb(172, 215, 216);
+    margin: 4px 25px;
+}
+.block-3 {
+    display: grid;
+    grid-template-rows: repeat(3, 28px);
+    grid-template-columns: 1fr 0.5fr 1fr 3fr;
+}
+#chek {
+    margin: 0;
+    grid-row: 3/4;
+    grid-column: 1/2;
+    justify-self: end;
+    align-self: center;
+}
+.lab-1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    align-self: center;
+}
+.lab-2 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    align-self: center;
+}
+.lab-3 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    align-self: center;
+}
+.inp-1 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-self: start;
+    margin-left: 0;
+}
+.inp-2 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    justify-self: start;
+    margin-left: 0;
+}
+.inp-3 {
+    grid-row: 3/4 ;
+    grid-column: 2/3;
+    justify-self: start;
+    margin-left: 0;
+}
+.lab {
+    margin-left: 20px;
+    font-size: 22px;
+    color: rgb(41, 26, 107);
+}
+.rezult {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    justify-self: start;
+    margin-left: 0;
+}
+.sbros {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    justify-self: start;
+    margin-left: 0;
+}
+button {
+    margin: 2px 25px;
+    padding: 2px 16px 2px 16px;
+    width: 100px;
+}
+.block-2 {
+    height: 1fr;
+    background-color: cornflowerblue;
+    padding: 10px 20px;
+}
+table, th, td {
+    border: 1px solid gray;
+    padding: 2px 8px;
+}
+table {
+    border-collapse: collapse ;
+    margin: 10px 30px;
+}
+.tabl {
+    display: flex;
+}
+caption {
+    margin: 6px 0px;
+    font-size: 1.2em;
+}
+
+
