@@ -28,12 +28,6 @@ document.querySelector('.result-1').addEventListener('click', () => {
     else {
         ress =((d2 * n1) / d1); 
     }
-    
-    console.log(d1);
-    console.log(d2);
-    console.log(n1);
-    console.log(n2);
-    console.log(ress);
 
     document.querySelector('.metka').innerHTML = 'Результат =  ' + (ress.toFixed(2));
 })
@@ -76,8 +70,54 @@ document.querySelector('.result-2').addEventListener('click', () => {
         maS = dS -dD;
         ress = dD; 
     }
-    console.log(dD);
-    console.log(maD);
-    console.log(miD);
+   
     document.querySelector('.metka-2').innerHTML = 'Результат =  ' + (ress) + ' +' + (maS.toFixed(2));
+})
+
+// расчет плоских блоков
+let numbersRow;//количество в ряду
+let totalDetails;//общее количество на данный момент на блоке
+let diameterDetails = document.querySelector('.inp-2');//диаметр детали
+let numberDetails = document.querySelector('.inp-1');//Всего деталей
+let diameterBlocks = document.querySelector('.inp-3');//диаметр блока, если надо
+let riad;//номер ряда
+let zaz = 2;//зазор между деталями, в частности между рядами
+
+let numDet;
+let diDetal;
+let diaBlock;
+
+function scanBlocks () {
+    numDet = +numberDetails.value;
+    diDetal = +diameterDetails.value;
+    diaBlock = +diameterBlocks.value;
+}
+
+document.querySelector('.rezult').addEventListener('click', () => {
+    scanBlocks();
+    riad =1;
+    numbersRow = 1;
+    let rr = diDetal/2;
+    totalDetails = numbersRow;
+    document.getElementById('t1r1c2').innerText = numbersRow;
+    document.getElementById('t1r1c3').innerText = totalDetails;
+    document.getElementById('t1r1c4').innerText = (rr * 2);
+
+    while((totalDetails + 6) <= numDet) {
+        riad++;
+        if(riad == 2){
+            numbersRow = 6;
+        }
+        else {
+            numbersRow += 6;  
+        }
+        rr += ( diDetal + zaz);
+        totalDetails += numbersRow;
+        document.getElementById('t1r' + riad + 'c2').innerText = numbersRow;
+        document.getElementById('t1r' + riad + 'c3').innerText = totalDetails;
+        document.getElementById('t1r' + riad + 'c4').innerText = (rr * 2);
+        
+    }
+
+    console.log( totalDetails);
 })
