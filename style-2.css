@@ -6,7 +6,7 @@
 html {
     max-width: 1280px;
     margin: 0 auto;
-    background-color: rgb(60, 61, 61);
+    background-color: rgb(61, 61, 61);
     font-family: 'Roboto';
 }
 
@@ -14,22 +14,47 @@ body {
     max-width: 1024px;
     margin: 0 auto;
 }
+header {
+    background-color: rgb(10, 10, 10);
+    height: 70px;  
+    display: flex;
+    justify-content: center; 
+}
+a {
+    text-decoration: none;
+    outline: none;
+    color: blanchedalmond;
+}
+a:hover {
+    color: cornflowerblue;
+}
+ul {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+li {
+    list-style: none;
+    margin: 2px 25px;
+}
 h2 {
-    margin-left: 50px;
-    margin-top: 5px;
+    margin: 15px 50px;
+    color: darkgrey;
 }
 #mytable {
     background-color: darkgreen;
     height: 100%;
 }
 .block-1 {
-    background-color: coral;
+    background-color: rgb(112, 88, 85);
     padding: 10px 20px;
     height: 1fr;
+    border-radius: 5px;
 }
 .block-3, .tabl {
-    background-color: darkgoldenrod;
+    background-color: rgb(112, 88, 85);
     padding: 10px 20px;
+    border-radius: 5px;
 }
 
 input {
@@ -105,9 +130,9 @@ button {
     width: 100px;
 }
 .block-2 {
-    height: 1fr;
-    background-color: cornflowerblue;
+    background-color: rgb(59, 66, 82);
     padding: 10px 20px;
+    border-radius: 5px;
 }
 table, th, td {
     border: 1px solid gray;
