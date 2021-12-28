@@ -93,32 +93,66 @@ function scanBlocks () {
     diaBlock = +diameterBlocks.value;
 }
 
+//дальше расчет и создание динамической таблицы
+//первая таблица, заголовок и цвета
 let myTable = document.createElement('table');
 myTable.setAttribute('class', 'variant_1');
 let divTab = document.querySelector('.tabl');
 divTab.appendChild(myTable);
-let mytitle =document.createElement('caption');
-mytitle.innerText = 'Вариант -1';
-document.querySelector('.variant_1').appendChild(mytitle);
-let groupSpan = document.createElement('colgroup');
-groupSpan.setAttribute('class', 'gruppa');
-groupSpan.innerHTML = `
+let colorSpan = `
 <col span="1" style="background:rgb(177, 156, 128)">
 <col span="1" style="background-color:LightCyan">
 <col span="1" style="background-color:rgb(154, 180, 180)">
 <col span="1" style="background-color:rgb(146, 107, 75)">`;
+
+let mytitle =document.createElement('caption');
+mytitle.innerText = 'Вариант -1';
+document.querySelector('.variant_1').appendChild(mytitle);
+
+let groupSpan = document.createElement('colgroup');
+groupSpan.setAttribute('class', 'gruppa');
+groupSpan.innerHTML =  colorSpan;
+
 document.querySelector('.variant_1').appendChild(groupSpan);
 
+//вторая таблица
+let myTable_2 = document.createElement('table');
+myTable_2.setAttribute('class', 'variant_2');
+divTab.appendChild(myTable_2);
 
+let mytitle_2 =document.createElement('caption');
+mytitle_2.innerText = 'Вариант -2';
+document.querySelector('.variant_2').appendChild(mytitle_2);
+
+let groupSpan_2 = document.createElement('colgroup');
+groupSpan_2.setAttribute('class', 'gruppa');
+groupSpan_2.innerHTML =  colorSpan;
+document.querySelector('.variant_2').appendChild(groupSpan_2);
+
+//третья таблица
+let myTable_3 = document.createElement('table');
+myTable_3.setAttribute('class', 'variant_3');
+divTab.appendChild(myTable_3);
+
+let mytitle_3 =document.createElement('caption');
+mytitle_3.innerText = 'Вариант -3';
+document.querySelector('.variant_3').appendChild(mytitle_3);
+
+let groupSpan_3 = document.createElement('colgroup');
+groupSpan_3.setAttribute('class', 'gruppa');
+groupSpan_3.innerHTML = colorSpan;
+
+document.querySelector('.variant_3').appendChild(groupSpan_3);
+
+//расчет по кнопке
 document.querySelector('.rezult').addEventListener('click', () => {
     scanBlocks();
+    let rr2 =0;
     riad =1;
     numbersRow = 1;
     let rr = diDetal/2;
     totalDetails = numbersRow;
-    let rr2 =0;
     rr2 = (rr * 2);
-
 
     let zagolovok = document.createElement('tr');
     zagolovok.innerHTML = `<td>${'Ряд №'}</td><td>${'В ряду'}</td><td>${'Всего'}</td><td>${'Диаметр'}</td>`;
@@ -127,10 +161,6 @@ document.querySelector('.rezult').addEventListener('click', () => {
     let row = document.createElement('tr');
     row.innerHTML = `<td>${riad}</td><td>${numbersRow}</td><td>${totalDetails}</td><td>${rr2}</td>`;
     document.querySelector('.variant_1').appendChild(row);
-
-    // document.getElementById('t1r1c2').innerText = numbersRow;
-    // document.getElementById('t1r1c3').innerText = totalDetails;
-    // document.getElementById('t1r1c4').innerText = (rr * 2);
 
     while((totalDetails + 6) <= numDet) {
         riad++;
@@ -147,11 +177,7 @@ document.querySelector('.rezult').addEventListener('click', () => {
         let row = document.createElement('tr');
         row.innerHTML = `<td>${riad}</td><td>${numbersRow}</td><td>${totalDetails}</td><td>${rr2}</td>`;
         document.querySelector('.variant_1').appendChild(row);
-        // document.getElementById('t1r' + riad + 'c2').innerText = numbersRow;
-        // document.getElementById('t1r' + riad + 'c3').innerText = totalDetails;
-        // document.getElementById('t1r' + riad + 'c4').innerText = (rr * 2);
         
     }
 
-    console.log( totalDetails);
 })
