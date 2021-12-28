@@ -93,15 +93,44 @@ function scanBlocks () {
     diaBlock = +diameterBlocks.value;
 }
 
+let myTable = document.createElement('table');
+myTable.setAttribute('class', 'variant_1');
+let divTab = document.querySelector('.tabl');
+divTab.appendChild(myTable);
+let mytitle =document.createElement('caption');
+mytitle.innerText = 'Вариант -1';
+document.querySelector('.variant_1').appendChild(mytitle);
+let groupSpan = document.createElement('colgroup');
+groupSpan.setAttribute('class', 'gruppa');
+groupSpan.innerHTML = `
+<col span="1" style="background:rgb(177, 156, 128)">
+<col span="1" style="background-color:LightCyan">
+<col span="1" style="background-color:rgb(154, 180, 180)">
+<col span="1" style="background-color:rgb(146, 107, 75)">`;
+document.querySelector('.variant_1').appendChild(groupSpan);
+
+
 document.querySelector('.rezult').addEventListener('click', () => {
     scanBlocks();
     riad =1;
     numbersRow = 1;
     let rr = diDetal/2;
     totalDetails = numbersRow;
-    document.getElementById('t1r1c2').innerText = numbersRow;
-    document.getElementById('t1r1c3').innerText = totalDetails;
-    document.getElementById('t1r1c4').innerText = (rr * 2);
+    let rr2 =0;
+    rr2 = (rr * 2);
+
+
+    let zagolovok = document.createElement('tr');
+    zagolovok.innerHTML = `<td>${'Ряд №'}</td><td>${'В ряду'}</td><td>${'Всего'}</td><td>${'Диаметр'}</td>`;
+    document.querySelector('.variant_1').appendChild(zagolovok);
+
+    let row = document.createElement('tr');
+    row.innerHTML = `<td>${riad}</td><td>${numbersRow}</td><td>${totalDetails}</td><td>${rr2}</td>`;
+    document.querySelector('.variant_1').appendChild(row);
+
+    // document.getElementById('t1r1c2').innerText = numbersRow;
+    // document.getElementById('t1r1c3').innerText = totalDetails;
+    // document.getElementById('t1r1c4').innerText = (rr * 2);
 
     while((totalDetails + 6) <= numDet) {
         riad++;
@@ -113,9 +142,14 @@ document.querySelector('.rezult').addEventListener('click', () => {
         }
         rr += ( diDetal + zaz);
         totalDetails += numbersRow;
-        document.getElementById('t1r' + riad + 'c2').innerText = numbersRow;
-        document.getElementById('t1r' + riad + 'c3').innerText = totalDetails;
-        document.getElementById('t1r' + riad + 'c4').innerText = (rr * 2);
+        rr2 = (rr * 2);
+
+        let row = document.createElement('tr');
+        row.innerHTML = `<td>${riad}</td><td>${numbersRow}</td><td>${totalDetails}</td><td>${rr2}</td>`;
+        document.querySelector('.variant_1').appendChild(row);
+        // document.getElementById('t1r' + riad + 'c2').innerText = numbersRow;
+        // document.getElementById('t1r' + riad + 'c3').innerText = totalDetails;
+        // document.getElementById('t1r' + riad + 'c4').innerText = (rr * 2);
         
     }
 
