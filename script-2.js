@@ -93,6 +93,7 @@ function scanBlocks () {
     diaBlock = +diameterBlocks.value;
 }
 
+
 //дальше расчет и создание динамической таблицы
 //первая таблица, заголовок и цвета
 let myTable = document.createElement('table');
@@ -242,3 +243,7 @@ document.querySelector('.rezult').addEventListener('click', () => {
         
     }
 })
+
+// document.querySelector('sbros').addEventListener('click', () => {
+//     document.querySelector('tabl').innerHTML = "";
+// })
