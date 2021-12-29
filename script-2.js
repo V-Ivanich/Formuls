@@ -93,8 +93,9 @@ function scanBlocks () {
     diaBlock = +diameterBlocks.value;
 }
 
+function myZagolovok() {
 
-//дальше расчет и создание динамической таблицы
+    //дальше расчет и создание динамической таблицы
 //первая таблица, заголовок и цвета
 let myTable = document.createElement('table');
 myTable.setAttribute('class', 'variant_1');
@@ -144,13 +145,21 @@ groupSpan_3.setAttribute('class', 'gruppa');
 groupSpan_3.innerHTML = colorSpan;
 
 document.querySelector('.variant_3').appendChild(groupSpan_3);
+document.querySelector('.variant_1').appendChild(mytitle);
+document.querySelector('.variant_2').appendChild(mytitle_2);
+document.querySelector('.variant_3').appendChild(mytitle_3);
+}
+
+
+document.querySelector('.sbros').addEventListener('click', () => {
+    document.getElementById('clear').innerHTML = "";
+})
 
 //расчет по кнопке
 document.querySelector('.rezult').addEventListener('click', () => {
+    myZagolovok();
     scanBlocks();
-    document.querySelector('.variant_1').appendChild(mytitle);
-    document.querySelector('.variant_2').appendChild(mytitle_2);
-    document.querySelector('.variant_3').appendChild(mytitle_3);
+   
     let rr2 =0;
     riad =1;
     numbersRow = 1;
@@ -244,6 +253,4 @@ document.querySelector('.rezult').addEventListener('click', () => {
     }
 })
 
-// document.querySelector('sbros').addEventListener('click', () => {
-//     document.querySelector('tabl').innerHTML = "";
-// })
+
