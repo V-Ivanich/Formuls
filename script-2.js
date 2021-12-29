@@ -107,7 +107,7 @@ let colorSpan = `
 
 let mytitle =document.createElement('caption');
 mytitle.innerText = 'Вариант -1';
-document.querySelector('.variant_1').appendChild(mytitle);
+
 
 let groupSpan = document.createElement('colgroup');
 groupSpan.setAttribute('class', 'gruppa');
@@ -122,7 +122,7 @@ divTab.appendChild(myTable_2);
 
 let mytitle_2 =document.createElement('caption');
 mytitle_2.innerText = 'Вариант -2';
-document.querySelector('.variant_2').appendChild(mytitle_2);
+
 
 let groupSpan_2 = document.createElement('colgroup');
 groupSpan_2.setAttribute('class', 'gruppa');
@@ -136,7 +136,7 @@ divTab.appendChild(myTable_3);
 
 let mytitle_3 =document.createElement('caption');
 mytitle_3.innerText = 'Вариант -3';
-document.querySelector('.variant_3').appendChild(mytitle_3);
+
 
 let groupSpan_3 = document.createElement('colgroup');
 groupSpan_3.setAttribute('class', 'gruppa');
@@ -147,10 +147,13 @@ document.querySelector('.variant_3').appendChild(groupSpan_3);
 //расчет по кнопке
 document.querySelector('.rezult').addEventListener('click', () => {
     scanBlocks();
+    document.querySelector('.variant_1').appendChild(mytitle);
+    document.querySelector('.variant_2').appendChild(mytitle_2);
+    document.querySelector('.variant_3').appendChild(mytitle_3);
     let rr2 =0;
     riad =1;
     numbersRow = 1;
-    let rr = diDetal/2;
+    let rr = diDetal/2;//радиус детали
     totalDetails = numbersRow;
     rr2 = (rr * 2);
 
@@ -180,4 +183,62 @@ document.querySelector('.rezult').addEventListener('click', () => {
         
     }
 
+    rr2 =0;
+    numbersRow = 3;
+    riad =1;
+    totalDetails = numbersRow;
+    rr = ((diDetal + zaz) * Math.sqrt(3)) / 3;
+    rr = Math.round(rr + diDetal/2);
+    rr2 = rr * 2;
+    zagolovok = document.createElement('tr');
+    zagolovok.innerHTML = `<td>${'Ряд №'}</td><td>${'В ряду'}</td><td>${'Всего'}</td><td>${'Диаметр'}</td>`;
+    document.querySelector('.variant_2').appendChild(zagolovok);
+
+    row = document.createElement('tr');
+    row.innerHTML = `<td>${riad}</td><td>${numbersRow}</td><td>${totalDetails}</td><td>${rr2}</td>`;
+    document.querySelector('.variant_2').appendChild(row);
+
+    while((totalDetails + 6) <= numDet) {
+        riad++;
+        numbersRow += 6;  
+        rr += ( diDetal + zaz);
+        totalDetails += numbersRow;
+        rr2 = (rr * 2);
+
+        row = document.createElement('tr');
+        row.innerHTML = `<td>${riad}</td><td>${numbersRow}</td><td>${totalDetails}</td><td>${rr2}</td>`;
+        document.querySelector('.variant_2').appendChild(row);
+        
+    }
+
+
+    rr2 =0;
+    numbersRow = 4;
+    riad =1;
+    totalDetails = numbersRow;
+    let katet = diDetal + zaz;
+    let gipotenuza =(Math.sqrt(Math.pow(katet, 2) * 2));
+    rr = Math.round(gipotenuza / 2 + (diDetal / 2));
+    rr2 = (rr * 2);
+
+    zagolovok = document.createElement('tr');
+    zagolovok.innerHTML = `<td>${'Ряд №'}</td><td>${'В ряду'}</td><td>${'Всего'}</td><td>${'Диаметр'}</td>`;
+    document.querySelector('.variant_3').appendChild(zagolovok);
+
+    row = document.createElement('tr');
+    row.innerHTML = `<td>${riad}</td><td>${numbersRow}</td><td>${totalDetails}</td><td>${rr2}</td>`;
+    document.querySelector('.variant_3').appendChild(row);
+
+    while((totalDetails + 6) <= numDet) {
+        riad++;
+        numbersRow += 6;  
+        rr += ( diDetal + zaz);
+        totalDetails += numbersRow;
+        rr2 = (rr * 2);
+
+        row = document.createElement('tr');
+        row.innerHTML = `<td>${riad}</td><td>${numbersRow}</td><td>${totalDetails}</td><td>${rr2}</td>`;
+        document.querySelector('.variant_3').appendChild(row);
+        
+    }
 })

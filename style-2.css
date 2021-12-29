@@ -140,10 +140,11 @@ table, th, td {
 }
 table {
     border-collapse: collapse ;
-    margin: 10px 30px;
+    margin: 10px 20px;
 }
 .tabl {
     display: flex;
+    min-height: 100px;
 }
 caption {
     margin: 6px 0px;
