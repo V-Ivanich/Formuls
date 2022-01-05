@@ -165,6 +165,11 @@ td {
     padding: 2px 8px;
 }
 
+th,
+td {
+    max-height: 30px;
+}
+
 table {
     border-collapse: collapse;
     margin: 10px 20px;

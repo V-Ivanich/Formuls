@@ -128,13 +128,6 @@ groupSpan_3.innerHTML = colorSpan;
 document.querySelector('.variant_3').appendChild(groupSpan_3);
 }
 
-// сброс таблиц
-document.querySelector('.sbros').addEventListener('click', () => {
-    document.getElementById('clear').innerHTML = "";
-    document.querySelector('.inp-1').value = "0";
-    document.querySelector('.inp-2').value = "0";
-    document.querySelector('.inp-3').value = "0";
-})
 
 //расчет по кнопке
 document.querySelector('.rezult').addEventListener('click', () => {
@@ -295,6 +288,24 @@ for (var i = 0; i < tds3.length; i++){
     } else continue
 }
 
-
 });//конец обработки по кнопке расчета блоков
 
+// сброс таблиц
+
+document.querySelector('.sbros').addEventListener('click', () => {
+ 
+    for (let i = document.querySelector('.variant_1').getElementsByTagName('tr').length - 1; i; i--) {
+        document.querySelector('.variant_1').deleteRow(i);
+    }
+    for (let i = document.querySelector('.variant_2').getElementsByTagName('tr').length - 1; i; i--) {
+        document.querySelector('.variant_2').deleteRow(i);
+    }
+    for (let i = document.querySelector('.variant_3').getElementsByTagName('tr').length - 1; i; i--) {
+        document.querySelector('.variant_3').deleteRow(i);
+    }
+
+
+    document.querySelector('.inp-1').value = "0";
+    document.querySelector('.inp-2').value = "0";
+    document.querySelector('.inp-3').value = "0";
+})
