@@ -232,23 +232,69 @@ document.querySelector('.rezult').addEventListener('click', () => {
 
 
 //выделение яцеек таблицы
+//для первой таблицы
 let table = document.querySelector('.variant_1');
 let info = document.querySelector('.metka-3');
 let tds = table.querySelectorAll('td');
 
+function resetActive(argum) {
 
-for (var i = 0; i < tds.length; i++){
-tds[i].addEventListener('click', function() {       
-   if(this.classList.contains('active')) {
-       this.classList.remove('active');
-   }
-   else {
-    this.classList.add('active');
-    diamRasch = +this.innerText;
-    polirovnik (diamRasch);
-   }
-});
+	for(var i = 0; i < argum.length; i++) {
+		if(argum[i].classList.contains('active')){ 
+			argum[i].classList.remove('active');
+		}
+		else continue
+	}
+    
 }
 
-})
+for (var i = 0; i < tds.length; i++){
+    if (tds[i].cellIndex == 3) {
+        tds[i].addEventListener('click', function() {       
+            resetActive(tds);
+            resetActive(tds2);
+            resetActive(tds3);
+            this.classList.add('active');
+            diamRasch = +this.innerText;
+            polirovnik (diamRasch);
+    });
+    } else continue
+}
+
+//для второй таблицы
+let table_2 = document.querySelector('.variant_2');
+let tds2 = table_2.querySelectorAll('td');
+
+for (var i = 0; i < tds2.length; i++){
+    if (tds2[i].cellIndex == 3) {
+        tds2[i].addEventListener('click', function() {       
+            resetActive(tds);
+            resetActive(tds2);
+            resetActive(tds3);
+            this.classList.add('active');
+            diamRasch = +this.innerText;
+            polirovnik (diamRasch);
+    });
+    } else continue
+}
+
+//для третьей таблицы
+let table_3 = document.querySelector('.variant_3');
+let tds3 = table_3.querySelectorAll('td');
+
+for (var i = 0; i < tds3.length; i++){
+    if (tds3[i].cellIndex == 3) {
+        tds3[i].addEventListener('click', function() {       
+            resetActive(tds);
+            resetActive(tds2);
+            resetActive(tds3);
+            this.classList.add('active');
+            diamRasch = +this.innerText;
+            polirovnik (diamRasch);
+    });
+    } else continue
+}
+
+
+});//конец обработки по кнопке расчета блоков
 
