@@ -137,7 +137,7 @@ document.querySelector('.rezult').addEventListener('click', () => {
     function polirovnik (diamRasch) {
         pol_20 = (diamRasch * 20)/ 100;
         pol_25 = (diamRasch * 25)/ 100;
-        info.innerText = 'Диаметр полировника = ' +  Math.round(pol_20 + diamRasch) + 'мм' +
+        info.textContent = 'Диаметр полировника = ' +  Math.round(pol_20 + diamRasch) + 'мм' +
         ' - ' +  Math.round(pol_25 + diamRasch) + 'мм';
     }
     
@@ -308,4 +308,6 @@ document.querySelector('.sbros').addEventListener('click', () => {
     document.querySelector('.inp-1').value = "0";
     document.querySelector('.inp-2').value = "0";
     document.querySelector('.inp-3').value = "0";
+    document.querySelector('.metka-3').textContent = 'Диаметр полировника =';
+
 })

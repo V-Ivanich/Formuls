@@ -32,8 +32,9 @@
     </header>
 
     <main>
-        <h2>Пересчет цвета относительно диаметра.</h2>
+
         <div class="block-1">
+            <h2>Пересчет цвета относительно диаметра.</h2>
 
             <input type="text" class="diamDet" value="0">
             <label for="">Диаметр 1</label>
@@ -50,8 +51,9 @@
             <button class="result-1">Расчет</button>
             <label for="" class="metka lab">Результат = </label>
         </div>
-        <h2>Расчет плоской фаски.</h2>
+
         <div class="block-2">
+            <h2>Расчет плоской фаски.</h2>
 
             <input type="text" id="diaDet" value="0">
             <label for="diaDet">Диаметр детали</label>
@@ -76,62 +78,69 @@
             <label for="" class="metka-2 lab">Результат = </label>
         </div>
 
-        <h2>Расчет плоских блоков</h2>
         <div class="block-3">
 
-            <label class="lab-1">Кол-во деталей</label>
+            <div class="zagolov">
+                <h2>Расчет плоских блоков</h2>
+            </div>
 
-            <label class="lab-2">Диаметр детали</label>
+            <div class="content">
 
-            <input type="checkbox" id="chek">
-            <label for="chek" class="lab-3">Диаметр блока</label>
+                <label class="lab-1">Кол-во деталей</label>
 
-            <input type="number" class="inp-1" value="0">
+                <label class="lab-2">Диаметр детали</label>
 
-            <input type="number" class="inp-2" value="0">
+                <input type="checkbox" id="chek">
+                <label for="chek" class="lab-3">Диаметр блока</label>
 
-            <input type="number" class="inp-3" value="0">
+                <input type="number" class="inp-1" value="0">
 
-            <button class="rezult">Расчет</button>
+                <input type="number" class="inp-2" value="0">
 
-            <button class="sbros">Сброс</button>
+                <input type="number" class="inp-3" value="0">
 
-            <label for="" class="metka-3 lab">Диаметр полировника = </label>
+                <button class="rezult">Расчет</button>
+
+                <button class="sbros">Сброс</button>
+
+                <label for="" class="metka-3 lab">Диаметр полировника = </label>
+
+            </div>
+
+            <div class="tabl">
+
+                <table class="variant_1">
+                    <caption>Вариант -1</caption>
+                    <tr>
+                        <th>Ряд №</th>
+                        <th>В ряду</th>
+                        <th>Всего</th>
+                        <th>Диаметр</th>
+                    </tr>
+                </table>
+
+                <table class="variant_2">
+                    <caption>Вариант -2</caption>
+                    <tr>
+                        <th>Ряд №</th>
+                        <th>В ряду</th>
+                        <th>Всего</th>
+                        <th>Диаметр</th>
+                    </tr>
+                </table>
+
+                <table class="variant_3">
+                    <caption>Вариант -3</caption>
+                    <tr>
+                        <th>Ряд №</th>
+                        <th>В ряду</th>
+                        <th>Всего</th>
+                        <th>Диаметр</th>
+                    </tr>
+                </table>
+
+            </div>
         </div>
-
-        <div class="tabl">
-
-            <table class="variant_1">
-                <caption>Вариант -1</caption>
-                <tr>
-                    <th>Ряд №</th>
-                    <th>В ряду</th>
-                    <th>Всего</th>
-                    <th>Диаметр</th>
-                </tr>
-            </table>
-
-            <table class="variant_2">
-                <caption>Вариант -2</caption>
-                <tr>
-                    <th>Ряд №</th>
-                    <th>В ряду</th>
-                    <th>Всего</th>
-                    <th>Диаметр</th>
-                </tr>
-            </table>
-
-            <table class="variant_3">
-                <caption>Вариант -3</caption>
-                <tr>
-                    <th>Ряд №</th>
-                    <th>В ряду</th>
-                    <th>Всего</th>
-                    <th>Диаметр</th>
-                </tr>
-            </table>
-        </div>
-
 
     </main>
     <script src="script-2.js"></script>
