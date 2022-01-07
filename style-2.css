@@ -6,7 +6,7 @@
 html {
     max-width: 1280px;
     margin: 0 auto;
-    background-color: rgb(61, 61, 61);
+    background-color: #708090;
     font-family: 'Roboto';
 }
 
@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background-color: rgba(36, 35, 48, 0.63);
+    background-color: #607488;
     height: 70px;
     display: flex;
     justify-content: center;
@@ -26,6 +26,7 @@ a {
     text-decoration: none;
     outline: none;
     color: blanchedalmond;
+    font-size: 1.2em;
 }
 
 a:hover {
@@ -46,7 +47,7 @@ li {
 
 h2 {
     padding: 10px 50px;
-    color: darkgrey;
+    color: #607488;
 }
 
 #mytable {
@@ -55,22 +56,24 @@ h2 {
 }
 
 .block-1 {
-    background-color: rgb(112, 88, 85);
+    background-color: #B0C4DE;
     padding: 0px 20px 15px 20px;
     height: 1fr;
     border-radius: 5px;
 }
 
 .block-3 {
-    background-color: rgb(112, 88, 85);
+    background-color: #9eb8da;
     padding: 0px 20px 15px 20px;
     border-radius: 5px;
 }
 
 input {
     width: 50px;
-    background-color: rgb(172, 215, 216);
+    height: 20px;
+    background-color: rgb(141, 161, 187);
     margin: 4px 25px;
+    color: cornsilk;
 }
 
 .content {
@@ -154,7 +157,7 @@ button {
 }
 
 .block-2 {
-    background-color: rgb(59, 66, 82);
+    background-color: #9cb0ca;
     padding: 0px 20px 15px 20px;
     border-radius: 5px;
 }
