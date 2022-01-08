@@ -50,6 +50,11 @@ h2 {
     color: #607488;
 }
 
+h6 {
+    font-size: 1.1em;
+    color: #3d5fa8;
+}
+
 #mytable {
     background-color: darkgreen;
     height: 100%;
@@ -66,6 +71,12 @@ hr {
     border-radius: 5px;
 }
 
+.block-2 {
+    background-color: #9cb0ca;
+    padding: 0px 20px 15px 20px;
+    border-radius: 5px;
+}
+
 .block-3 {
     background-color: #9eb8da;
     padding: 0px 20px 15px 20px;
@@ -75,7 +86,6 @@ hr {
 .block-4 {
     background-color: #B0C4DE;
     padding: 0px 20px 15px 20px;
-    height: 200px;
     border-radius: 5px;
 }
 
@@ -165,11 +175,8 @@ button {
     margin: 2px 25px;
     padding: 2px 16px 2px 16px;
     width: 100px;
-}
-
-.block-2 {
-    background-color: #9cb0ca;
-    padding: 0px 20px 15px 20px;
+    height: 27px;
+    background-color: rgb(158, 207, 216);
     border-radius: 5px;
 }
 
@@ -203,4 +210,160 @@ caption {
 .active {
     background: rgb(59, 123, 175);
     color: seashell;
+}
+
+.radius {
+    display: grid;
+    grid-template-rows: repeat(12, 35px);
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.paragraf1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.radius_1,
+.r_A {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.r_A {
+    padding: 4px 0px 0px 90px;
+}
+
+.radius_2,
+.r_B {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+.r_B {
+    padding: 4px 0px 0px 90px;
+}
+
+.diametrDetaly,
+.diaMdeT {
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+
+.diaMdeT {
+    padding: 4px 0px 0px 90px;
+}
+
+.tolchina,
+.tTol {
+    grid-row: 5/6;
+    grid-column: 1/2;
+}
+
+.tTol {
+    padding: 4px 0px 0px 90px;
+}
+
+.paragraf2 {
+    grid-row: 6/7;
+    grid-column: 1/2;
+}
+
+.yes,
+.das {
+    grid-row: 7/8;
+    grid-column: 1/2;
+}
+
+.das {
+    padding: 4px 0px 0px 65px;
+}
+
+.no,
+.nets {
+    grid-row: 8/9;
+    grid-column: 1/2;
+}
+
+.nets {
+    padding: 4px 0px 0px 65px;
+}
+
+.kol_vo,
+.shtyk {
+    grid-row: 9/10;
+    grid-column: 1/2;
+}
+
+.shtyk {
+    padding: 4px 0px 0px 85px;
+}
+
+.raschetR {
+    grid-row: 11/12;
+    grid-column: 1/2;
+}
+
+.sbrosR {
+    grid-row: 12/13;
+    grid-column: 1/2;
+}
+
+.storonaA {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.DiSch {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.DiNak {
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+.rNak {
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+
+.DiPol {
+    grid-row: 5/6;
+    grid-column: 2/3;
+}
+
+.rPol {
+    grid-row: 6/7;
+    grid-column: 2/3;
+}
+
+.storonaB {
+    grid-row: 7/8;
+    grid-column: 2/3;
+}
+
+.slifD {
+    grid-row: 8/9;
+    grid-column: 2/3;
+}
+
+.naklD {
+    grid-row: 9/10;
+    grid-column: 2/3;
+}
+
+.naklR {
+    grid-row: 10/11;
+    grid-column: 2/3;
+}
+
+.polD {
+    grid-row: 11/12;
+    grid-column: 2/3;
+}
+
+.polR {
+    grid-row: 12/13;
+    grid-column: 2/3;
 }
