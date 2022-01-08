@@ -34,6 +34,7 @@ document.querySelector('.result-1').addEventListener('click', () => {
     }
     document.querySelector('.metka').textContent = 'Результат =  ' + parseFloat(ress.toFixed(2));
 })
+
 //сброс цвета
 document.querySelector('.reset-1').addEventListener('click', () => {
     resetCvet();
@@ -161,6 +162,7 @@ groupSpan_3.innerHTML = colorSpan;
 document.querySelector('.variant_3').appendChild(groupSpan_3);
 }
 
+//радиокнопка
 const radioB = document.getElementById('chek');
 radioB.addEventListener('click', () => {
     if(radioB.checked){
@@ -196,23 +198,43 @@ document.querySelector('.rezult').addEventListener('click', () => {
     row.innerHTML = `<td>${riad}</td><td>${numbersRow}</td><td>${totalDetails}</td><td>${rr2}</td>`;
     document.querySelector('.variant_1').appendChild(row);
 
-    while((totalDetails + 6) <= numDet) {
-        riad++;
-        if(riad == 2){
-            numbersRow = 6;
+    if (radioB.checked) {
+            while( rr2 <= diaBlock) {
+                riad++;
+                if(riad == 2){
+                numbersRow = 6;
+                 }
+                 else {
+                 numbersRow += 6;  
+                 }
+                rr += ( diDetal + zaz);
+                totalDetails += numbersRow;
+                rr2 = (rr * 2);
+    
+                row = document.createElement('tr');
+                row.innerHTML = `<td>${riad}</td><td>${numbersRow}</td><td>${totalDetails}</td><td>${rr2}</td>`;
+                document.querySelector('.variant_1').appendChild(row);
+            }
         }
-        else {
-            numbersRow += 6;  
-        }
-        rr += ( diDetal + zaz);
-        totalDetails += numbersRow;
-        rr2 = (rr * 2);
-
-        row = document.createElement('tr');
-        row.innerHTML = `<td>${riad}</td><td>${numbersRow}</td><td>${totalDetails}</td><td>${rr2}</td>`;
-        document.querySelector('.variant_1').appendChild(row);
-        
+    else {
+            while((totalDetails + 6) <= numDet) {
+                riad++;
+                if(riad == 2){
+                    numbersRow = 6;
+                }
+                else {
+                    numbersRow += 6;  
+                }
+                rr += ( diDetal + zaz);
+                totalDetails += numbersRow;
+                rr2 = (rr * 2);
+    
+                row = document.createElement('tr');
+                row.innerHTML = `<td>${riad}</td><td>${numbersRow}</td><td>${totalDetails}</td><td>${rr2}</td>`;
+                document.querySelector('.variant_1').appendChild(row);
+            }
     }
+        
 
     rr2 =0;
     numbersRow = 3;
@@ -226,17 +248,29 @@ document.querySelector('.rezult').addEventListener('click', () => {
     row.innerHTML = `<td>${riad}</td><td>${numbersRow}</td><td>${totalDetails}</td><td>${rr2}</td>`;
     document.querySelector('.variant_2').appendChild(row);
 
-    while((totalDetails + 6) <= numDet) {
-        riad++;
-        numbersRow += 6;  
-        rr += ( diDetal + zaz);
-        totalDetails += numbersRow;
-        rr2 = (rr * 2);
-
-        row = document.createElement('tr');
-        row.innerHTML = `<td>${riad}</td><td>${numbersRow}</td><td>${totalDetails}</td><td>${rr2}</td>`;
-        document.querySelector('.variant_2').appendChild(row);
-        
+    if(radioB.checked) {
+        while(rr2 <= diaBlock) {
+            riad++;
+            numbersRow += 6;  
+            rr += ( diDetal + zaz);
+            totalDetails += numbersRow;
+            rr2 = (rr * 2);
+            row = document.createElement('tr');
+            row.innerHTML = `<td>${riad}</td><td>${numbersRow}</td><td>${totalDetails}</td><td>${rr2}</td>`;
+            document.querySelector('.variant_2').appendChild(row);   
+        }
+    }
+    else {
+        while((totalDetails + 6) <= numDet) {
+            riad++;
+            numbersRow += 6;  
+            rr += ( diDetal + zaz);
+            totalDetails += numbersRow;
+            rr2 = (rr * 2);
+            row = document.createElement('tr');
+            row.innerHTML = `<td>${riad}</td><td>${numbersRow}</td><td>${totalDetails}</td><td>${rr2}</td>`;
+            document.querySelector('.variant_2').appendChild(row);   
+        }
     }
 
 
@@ -253,6 +287,21 @@ document.querySelector('.rezult').addEventListener('click', () => {
     row.innerHTML = `<td>${riad}</td><td>${numbersRow}</td><td>${totalDetails}</td><td>${rr2}</td>`;
     document.querySelector('.variant_3').appendChild(row);
 
+if(radioB.checked){
+    while(rr2 <= diaBlock) {
+        riad++;
+        numbersRow += 6;  
+        rr += ( diDetal + zaz);
+        totalDetails += numbersRow;
+        rr2 = (rr * 2);
+
+        row = document.createElement('tr');
+        row.innerHTML = `<td>${riad}</td><td>${numbersRow}</td><td>${totalDetails}</td><td>${rr2}</td>`;
+        document.querySelector('.variant_3').appendChild(row);
+        
+    }
+}
+else {
     while((totalDetails + 6) <= numDet) {
         riad++;
         numbersRow += 6;  
@@ -265,6 +314,8 @@ document.querySelector('.rezult').addEventListener('click', () => {
         document.querySelector('.variant_3').appendChild(row);
         
     }
+}
+
 
 
 //выделение яцеек таблицы

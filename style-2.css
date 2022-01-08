@@ -55,6 +55,10 @@ h2 {
     height: 100%;
 }
 
+hr {
+    border: 1px solid #577d8f;
+}
+
 .block-1 {
     background-color: #B0C4DE;
     padding: 0px 20px 15px 20px;
@@ -68,9 +72,16 @@ h2 {
     border-radius: 5px;
 }
 
+.block-4 {
+    background-color: #B0C4DE;
+    padding: 0px 20px 15px 20px;
+    height: 200px;
+    border-radius: 5px;
+}
+
 input {
     width: 50px;
-    height: 20px;
+    height: 18px;
     background-color: rgb(141, 161, 187);
     margin: 4px 25px;
     color: cornsilk;
