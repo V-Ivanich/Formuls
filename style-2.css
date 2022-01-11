@@ -161,7 +161,7 @@ input {
 
 .lab {
     margin-left: 20px;
-    font-size: 22px;
+    font-size: 1em;
     color: rgb(41, 26, 107);
 }
 
@@ -216,7 +216,7 @@ caption {
 }
 
 .centr {
-    padding-left: 20%;
+    padding-left: 15%;
     padding-top: 6px;
 }
 
@@ -228,7 +228,7 @@ caption {
 .radius {
     display: grid;
     grid-template-rows: repeat(12, 35px);
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr repeat(5, 0.5fr);
 }
 
 .paragraf1 {
@@ -429,4 +429,13 @@ caption {
 .okno10 {
     grid-row: 12/13;
     grid-column: 3/4;
+}
+.koli_tvo {
+    grid-row: 1/2;
+    grid-column: 5/7;
+}
+.outL {
+    padding-top: 8px;
+    padding-left: 8%;
+    background-color: #9eb8da;
 }
