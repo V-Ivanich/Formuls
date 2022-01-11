@@ -187,7 +187,14 @@ button {
     background-color: rgb(158, 207, 216);
     border-radius: 5px;
 }
-
+button:hover {
+    background-color: rgb(158, 157, 250);
+    transition: 0.3s;
+}
+button:active {
+    background-color: rgb(99, 90, 182);
+    transition: 0.3s;
+}
 table,
 th,
 td {
