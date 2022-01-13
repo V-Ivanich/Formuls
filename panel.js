@@ -3,7 +3,17 @@ const rMenu = document.querySelector('.rightMenu');
 const men =document.querySelector('.menuMy');
 const divMenu = document.querySelector('.myMenu');
 
+let coord;
+let koord;
 
+function koordinat () {
+    coord = men.getBoundingClientRect();
+    koord = coord.left;
+    divMenu.style.left = koord + 'px';
+}
+
+
+//горизонтальная панель
 spravka.addEventListener('click', () => {
     rMenu.style.right = 2 + 'px';
 })
@@ -11,10 +21,13 @@ spravka.addEventListener('click', () => {
 rMenu.addEventListener('click', () => {
     rMenu.style.right = -218 + 'px';
 })
+//вертикальная панель
 men.addEventListener('click', () => {
-    divMenu.style.top = 10 + 'px';
+    koordinat();
+    divMenu.style.top = 50 + 'px';
 })
 
 divMenu.addEventListener('click', () => {
+    koordinat();
     divMenu.style.top = -300 + 'px';
 })

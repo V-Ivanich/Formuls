@@ -44,29 +44,34 @@ li {
     list-style: none;
     margin: 2px 25px;
 }
+
 .rightMenu {
     position: absolute;
     background-color: rgba(9, 9, 12, 0.719);
     transition: 0.6s;
     width: 200px;
     height: 400px;
-    right: -218px;
+    right: -220px;
     padding: 10px;
+    border-radius: 8px;
 }
+
 .myMenu {
     position: absolute;
     transition: 0.5s;
     width: 200px;
     height: 300px;
-    left: 150px;
     top: -300px;
-    background-color: rgba(33, 33, 53, 0.829);
+    background-color: rgba(33, 33, 53, 0.733);
+    border-radius: 8px;
 }
+
 p {
     margin-top: 20px;
     padding-left: 10px;
     color: burlywood;
 }
+
 h2 {
     padding: 10px 50px;
     color: #607488;
@@ -209,14 +214,17 @@ button {
     background-color: rgb(158, 207, 216);
     border-radius: 5px;
 }
+
 button:hover {
     background-color: rgb(158, 157, 250);
     transition: 0.3s;
 }
+
 button:active {
     background-color: rgb(99, 90, 182);
     transition: 0.3s;
 }
+
 table,
 th,
 td {
@@ -459,10 +467,12 @@ caption {
     grid-row: 12/13;
     grid-column: 3/4;
 }
+
 .koli_tvo {
     grid-row: 1/2;
     grid-column: 5/7;
 }
+
 .outL {
     padding-top: 8px;
     padding-left: 8%;
