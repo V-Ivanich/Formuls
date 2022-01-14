@@ -12,6 +12,10 @@ function koordinat () {
     divMenu.style.left = koord + 'px';
 }
 
+window.addEventListener('resize', function () {
+    koordinat();
+})
+
 
 //горизонтальная панель
 spravka.addEventListener('click', () => {

@@ -99,29 +99,72 @@ hr {
     border: 1px solid #577d8f;
 }
 
-.block-1 {
+.razmet {
+    padding: 0px 20px 15px 20px;
+    border-radius: 5px;
+}
+.cvetB_1 {
     background-color: #B0C4DE;
-    padding: 0px 20px 15px 20px;
-    height: 1fr;
-    border-radius: 5px;
 }
-
-.block-2 {
-    background-color: #9cb0ca;
-    padding: 0px 20px 15px 20px;
-    border-radius: 5px;
+.cvetB_2 {
+    background-color: #9cb0ca;;
 }
-
-.block-3 {
+.cvetB_3 {
     background-color: #9eb8da;
-    padding: 0px 20px 15px 20px;
-    border-radius: 5px;
 }
 
-.block-4 {
-    background-color: #B0C4DE;
-    padding: 0px 20px 15px 20px;
-    border-radius: 5px;
+.segments {
+    display: grid;
+    grid-template-rows: repeat(3, 28px);
+    grid-template-columns: repeat(4, .5fr) 3fr;
+}
+.b5in1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.b5in2 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.b5in3 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+.b5in4 {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+.b5in5 {
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+#razmer {
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+.b5lab1 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+.b5lab2 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.b5lab3 {
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+.b5lab4 {
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+.b5lab5 {
+    grid-row: 3/4;
+    grid-column: 4/5;
+}
+.b5lab6 {
+    grid-row: 1/2;
+    grid-column: 4/5;
 }
 
 input {
@@ -254,7 +297,7 @@ caption {
 
 .centr {
     padding-left: 15%;
-    padding-top: 6px;
+    padding-top: 4px;
 }
 
 .active {
