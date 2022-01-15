@@ -61,6 +61,9 @@ li {
 }
 .hi_on {
     visibility: visible;
+    transition-duration: 5ms;
+    opacity: .5 1;
+    
 }
 .myMenu {
     position: absolute;

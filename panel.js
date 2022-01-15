@@ -14,6 +14,10 @@ function koordinat () {
     divMenu.style.left = koord + 'px';
 }
 
+function klasN () {
+    zag.className = "hi_on";
+    par.className ="hi_on";
+}
 window.addEventListener('resize', function () {
     koordinat();
 })
@@ -23,8 +27,7 @@ window.addEventListener('resize', function () {
 spravka.addEventListener('click', () => {
     rMenu.style.width = 218 + 'px';
     rMenu.style.right = 1 + 'px';
-    zag.className = "hi_on";
-    par.className ="hi_on";
+    setTimeout(klasN, 450);
 })
 
 rMenu.addEventListener('click', () => {
