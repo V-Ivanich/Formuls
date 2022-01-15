@@ -1,19 +1,17 @@
 const spravka = document.querySelector('.spravka');
 const rMenu = document.querySelector('.rightMenu');
 const men =document.querySelector('.menuMy');
-const divMenu = document.querySelector('.myMenu');
-let win;
+const divMenu = document.querySelector('.myMenu'); 
+const zag = document.getElementById('scrH');
+const par = document.getElementById('scrP');
 
 let coord;
 let koord;
 
 function koordinat () {
     coord = men.getBoundingClientRect();
-    win = document.documentElement.clientWidth;
     koord = coord.left;
     divMenu.style.left = koord + 'px';
-    rMenu.style.left = win + 'px';
-    console.log(koord, win);
 }
 
 window.addEventListener('resize', function () {
@@ -23,11 +21,17 @@ window.addEventListener('resize', function () {
 
 //горизонтальная панель
 spravka.addEventListener('click', () => {
-    rMenu.style.left = (win - 218) + 'px';
+    rMenu.style.width = 218 + 'px';
+    rMenu.style.right = 1 + 'px';
+    zag.className = "hi_on";
+    par.className ="hi_on";
 })
 
 rMenu.addEventListener('click', () => {
-    rMenu.style.left = (win + 218) + 'px';
+    rMenu.style.width = 0 + 'px';
+    rMenu.style.right = -21 + 'px';
+    zag.className = "hi_off";
+    par.className = "hi_off";
 })
 //вертикальная панель
 men.addEventListener('click', () => {
