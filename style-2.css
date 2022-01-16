@@ -23,6 +23,10 @@ header {
     justify-content: center;
 }
 
+.razdel_1 {
+    display: flex;
+}
+
 a {
     text-decoration: none;
     outline: none;
@@ -56,15 +60,18 @@ li {
     border-radius: 8px;
     padding: 30px 10px;
 }
+
 .hi_off {
-    visibility:hidden;
+    visibility: hidden;
 }
+
 .hi_on {
     visibility: visible;
     transition-duration: 5ms;
     opacity: .5 1;
-    
+
 }
+
 .myMenu {
     position: absolute;
     transition: 0.5s;
@@ -545,4 +552,9 @@ caption {
     padding-top: 8px;
     padding-left: 8%;
     background-color: #9eb8da;
+}
+
+.reset-1 {
+    display: grid;
+    grid-template-rows: repeat(5, 40px);
 }
