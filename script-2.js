@@ -112,6 +112,7 @@ let diamRasch, pol_20, pol_25;
 let numDet;
 let diDetal;
 let diaBlock;
+let str = '\u00D8';
 
 function resetBloki() {
 numberDetails.value = '';
@@ -183,7 +184,7 @@ document.querySelector('.rezult').addEventListener('click', () => {
     function polirovnik (diamRasch) {
         pol_20 = (diamRasch * 20)/ 100;
         pol_25 = (diamRasch * 25)/ 100;
-        info.textContent = 'Диаметр полировника = ' +  parseFloat((pol_20 + diamRasch).toFixed(1)) + 'мм' +
+        info.textContent = str + " полировника = " +  parseFloat((pol_20 + diamRasch).toFixed(1)) + 'мм' +
         ' - ' +  parseFloat((pol_25 + diamRasch).toFixed(1)) + 'мм';
     }
     
@@ -399,6 +400,6 @@ document.querySelector('.sbros').addEventListener('click', () => {
     }
 
     resetBloki();
-    document.querySelector('.metka-3').textContent = 'Диаметр полировника =';
+    document.querySelector('.metka-3').textContent = str +' полировника =';
 
 })
