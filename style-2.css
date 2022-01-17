@@ -23,9 +23,76 @@ header {
     justify-content: center;
 }
 
+
+/* первый раздел */
 .razdel_1 {
     display: flex;
 }
+.block-1 {
+    width: 50%;
+    display: grid;
+    grid-template-rows:repeat(8, 32px);
+    grid-template-columns: 50px repeat(3, .5fr);
+}
+.block-2 {
+    width: 50%;
+   display: grid;
+   grid-template-rows:repeat(8, 32px);
+   grid-template-columns: 50px repeat(3, .5fr);
+}
+.zagolovok-1 {
+    grid-row: 1/2;
+    grid-column: 2/5;
+}
+.diamDet {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.lab-a {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+.diamProb {
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+.lab-b {
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+.nDet {
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+.lab-c {
+    grid-row: 4/5;
+    grid-column: 3/4;
+}
+.nProb {
+    grid-row: 5/6;
+    grid-column: 2/3;
+}
+.lab-d {
+    grid-row: 5/6;
+    grid-column: 3/4;
+}
+.result-1 {
+    grid-row: 6/7;
+    grid-column: 2/3;
+}
+.reset-1 {
+    grid-row: 6/7;
+    grid-column: 3/4;
+}
+.metka {
+    grid-row: 7/8;
+    grid-column: 2/5;
+}
+.zagolovok-2 {
+    grid-row: 1/2;
+    grid-column: 2/5;
+}
+
 
 a {
     text-decoration: none;
@@ -89,7 +156,6 @@ p {
 }
 
 h2 {
-    padding: 10px 50px;
     color: #607488;
 }
 
@@ -109,10 +175,6 @@ h6 {
 #mytable {
     background-color: darkgreen;
     height: 100%;
-}
-
-hr {
-    border: 1px solid #577d8f;
 }
 
 .razmet {
@@ -263,7 +325,8 @@ input {
 
 .lab {
     margin-left: 20px;
-    font-size: 1em;
+    margin-top: 5px;
+    font-size: 1.2em;
     color: rgb(41, 26, 107);
 }
 
@@ -552,9 +615,4 @@ caption {
     padding-top: 8px;
     padding-left: 8%;
     background-color: #9eb8da;
-}
-
-.reset-1 {
-    display: grid;
-    grid-template-rows: repeat(5, 40px);
 }
