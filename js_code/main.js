@@ -112,7 +112,7 @@ let diamRasch, pol_20, pol_25;
 let numDet;
 let diDetal;
 let diaBlock;
-let str = '\u00D8';
+let str = '\u2d41';
 
 function resetBloki() {
 numberDetails.value = '';

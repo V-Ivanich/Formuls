@@ -1,0 +1,67 @@
+.segments {
+  display: grid;
+  grid-template-rows: repeat(3, 28px);
+  grid-template-columns: 0.4fr 0.5fr 0.4fr 0.5fr repeat(2, 0.6fr);
+}
+.b5in1 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  justify-self: center;
+}
+.b5in2 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  justify-self: center;
+}
+.b5in3 {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  justify-self: center;
+}
+.b5in4 {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  justify-self: end;
+}
+.b5in5 {
+  grid-row: 3/4;
+  grid-column: 3/4;
+  justify-self: end;
+}
+#razmer {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  justify-self: end;
+}
+.b5lab1 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+.b5lab2 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+.b5lab3 {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+.b5lab4 {
+  grid-row: 2/3;
+  grid-column: 4/5;
+}
+.b5lab5 {
+  grid-row: 3/4;
+  grid-column: 4/5;
+}
+.b5lab6 {
+  grid-row: 1/2;
+  grid-column: 4/5;
+}
+.result_3 {
+  grid-row: 2/3;
+  grid-column: 5/6;
+}
+.reset_3 {
+  grid-row: 2/3;
+  grid-column: 6/7;
+}

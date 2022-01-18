@@ -1,4 +1,5 @@
-* {
+
+/* * {
     margin: 0;
     padding: 0;
 }
@@ -15,17 +16,15 @@ body {
     margin: 0 auto;
     overflow-x: hidden;
 }
-
 header {
     background-color: #607488;
     height: 70px;
     display: flex;
     justify-content: center;
-}
-
+} */
 
 /* первый раздел */
-.razdel_1 {
+/* .razdel_1 {
     display: flex;
 }
 
@@ -107,10 +106,11 @@ header {
 .metka {
     grid-row: 7/8;
     grid-column: 2/6;
-}
+} */
+
 
 /* блок плоской фаски */
-.zagolovok-2 {
+/* .zagolovok-2 {
     grid-row: 1/2;
     grid-column: 2/5;
 }
@@ -202,9 +202,9 @@ header {
 .metka-3 {
     grid-row: 2/3;
     grid-column: 5/6;
-}
+} */
 
-a {
+/* a {
     text-decoration: none;
     outline: none;
     color: blanchedalmond;
@@ -225,9 +225,9 @@ ul {
 li {
     list-style: none;
     margin: 2px 25px;
-}
+} */
 
-.rightMenu {
+/* .rightMenu {
     position: absolute;
     background-color: rgba(9, 9, 12, 0.603);
     transition: 0.6s;
@@ -236,9 +236,9 @@ li {
     right: -21px;
     border-radius: 8px;
     padding: 30px 10px;
-}
+} */
 
-.hi_off {
+/* .hi_off {
     visibility: hidden;
 }
 
@@ -247,9 +247,9 @@ li {
     transition-duration: 5ms;
     opacity: .5 1;
 
-}
+} */
 
-.myMenu {
+/* .myMenu {
     position: absolute;
     transition: 0.5s;
     width: 200px;
@@ -257,9 +257,9 @@ li {
     top: -300px;
     background-color: rgba(33, 33, 53, 0.733);
     border-radius: 8px;
-}
+} */
 
-p {
+/* p {
     margin-top: 20px;
     padding-left: 10px;
     color: burlywood;
@@ -280,19 +280,19 @@ h6 {
     color: #3d5fa8;
     padding-left: 10%;
     padding-top: 10px;
-}
+} */
 
-#mytable {
+/* #mytable {
     background-color: darkgreen;
     height: 100%;
-}
+} */
 
-.razmet {
+/* .razmet {
     padding: 0px 20px 15px 20px;
     border-radius: 5px;
-}
+} */
 
-.cvetB_1 {
+/* .cvetB_1 {
     background-color: #B0C4DE;
 }
 
@@ -303,9 +303,9 @@ h6 {
 
 .cvetB_3 {
     background-color: #9eb8da;
-}
+} */
 
-.segments {
+/* .segments {
     display: grid;
     grid-template-rows: repeat(3, 28px);
     grid-template-columns: .4fr .5fr .4fr .5fr repeat(2, .6fr);
@@ -385,17 +385,17 @@ h6 {
 .reset_3 {
     grid-row: 2/3;
     grid-column: 6/7;
-}
+} */
 
-input {
+/* input {
     width: 50px;
     height: 18px;
     background-color: rgb(141, 161, 187);
     margin: 4px 5px;
     color: cornsilk;
-}
+} */
 
-.content {
+/* .content {
     display: grid;
     grid-template-rows: repeat(3, 30px);
     grid-template-columns: 1fr .5fr .5fr .25fr 2fr;
@@ -469,11 +469,11 @@ input {
     grid-column: 3/4;
     justify-self: start;
     margin-left: 0;
-}
+} */
 
 
 
-button {
+/* button {
     margin: 2px 2px;
     padding: 2px 16px 2px 16px;
     width: 80px;
@@ -490,9 +490,9 @@ button:hover {
 button:active {
     background-color: rgb(99, 90, 182);
     transition: 0.3s;
-}
+} */
 
-table,
+/* table,
 th,
 td {
     border: 1px solid gray;
@@ -744,4 +744,4 @@ caption {
     padding-top: 8px;
     padding-left: 8%;
     background-color: #9eb8da;
-}
+} */
