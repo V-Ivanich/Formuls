@@ -69,15 +69,13 @@
   height: 220px;
   position: relative;
   display: flex;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 .imagess {
   width: 180px;
   height: 180px;
   margin-left: 80px;
   margin-top: 20px;
-  background: #35519cec;
+  background: #e0b1abec;
   position: relative;
 }
 .imagess:before,
@@ -119,9 +117,4 @@
 .levoe,
 .pravoe {
   width: 50%;
-}
-.pravoe {
-  border: 1px solid #455ecc;
-  border-radius: 5px;
-  padding: 10px;
 }

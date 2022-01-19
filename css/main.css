@@ -540,6 +540,9 @@ caption {
   padding-left: 8%;
   background-color: #9eb8da;
 }
+h3 {
+  color: rgba(214, 64, 64, 0.808);
+}
 .segments {
   display: grid;
   grid-template-rows: repeat(3, 28px);
@@ -610,12 +613,16 @@ caption {
 .vizual {
   height: 220px;
   position: relative;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .imagess {
   width: 180px;
   height: 180px;
-  margin: 80px;
-  background: #d7695a;
+  margin-left: 80px;
+  margin-top: 20px;
+  background: #635ab6;
   position: relative;
 }
 .imagess:before,
@@ -653,4 +660,13 @@ caption {
   top: -38px;
   left: -38px;
   z-index: 33;
+}
+.levoe,
+.pravoe {
+  width: 50%;
+}
+.pravoe {
+  border: 1px solid #455ecc;
+  border-radius: 5px;
+  padding: 10px;
 }

@@ -1,3 +1,7 @@
+
+h3 {
+    color: @red;
+}
 .segments {
     display: grid;
     grid-template-rows: repeat(3, 28px);
@@ -79,16 +83,21 @@
     grid-row: 2/3;
     grid-column: 6/7;
 }
+
 .vizual {
     height: 220px;
     position: relative;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 //фигура
 .imagess {
     width: 180px;
     height: 180px;
-    margin: 80px;
-    background: #d7695a;
+    margin-left: 80px;
+    margin-top: 20px;
+    background: @butAct;
     position: relative;
 
     &:before,
@@ -109,6 +118,7 @@
         transform: rotate(60deg);
     }
 }
+
 .krug {
     height: 206px;
     width: 206px;
@@ -128,4 +138,12 @@
     top: -38px;
     left: -38px;
     z-index: 33;
+}
+.levoe, .pravoe {
+    width: 50%;
+}
+.pravoe {
+    border: 1px solid rgb(69, 94, 204);
+    border-radius: 5px;
+    padding: 10px;
 }
