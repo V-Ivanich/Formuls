@@ -65,3 +65,50 @@
   grid-row: 2/3;
   grid-column: 6/7;
 }
+.vizual {
+  height: 220px;
+  position: relative;
+}
+.imagess {
+  width: 180px;
+  height: 180px;
+  margin: 80px;
+  background: #d7695a;
+  position: relative;
+}
+.imagess:before,
+.imagess:after {
+  content: "";
+  height: 180px;
+  width: 180px;
+  background: inherit;
+  position: absolute;
+  top: 20;
+  left: 20;
+}
+.imagess:before {
+  transform: rotate(30deg);
+}
+.imagess:after {
+  transform: rotate(60deg);
+}
+.krug {
+  height: 206px;
+  width: 206px;
+  border-radius: 50%;
+  border: 2px solid black;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  z-index: 33;
+}
+.krug_big {
+  height: 252px;
+  width: 252px;
+  border-radius: 50%;
+  border: 2px solid #2eaf64;
+  position: absolute;
+  top: -38px;
+  left: -38px;
+  z-index: 33;
+}

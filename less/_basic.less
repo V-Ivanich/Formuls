@@ -7,7 +7,7 @@
 html {
     max-width: 1280px;
     margin: 0 auto;
-    background-color: #708090;
+    background-color: @osnova;
     font-family: 'Roboto';
 }
 
@@ -19,22 +19,22 @@ body {
 p {
     margin-top: 20px;
     padding-left: 10px;
-    color: burlywood;
+    color: @paragraf;
 }
 
 h2 {
-    color: #607488;
+    color: @h_2;
 }
 
 h4 {
     padding-left: 5%;
-    color: #3d5fa8;
+    color: @h4_h6;
     padding-top: 6px;
 }
 
 h6 {
     font-size: 1.1em;
-    color: #3d5fa8;
+    color: @h4_h6;
     padding-left: 10%;
     padding-top: 10px;
 }
@@ -42,12 +42,12 @@ h6 {
 a {
     text-decoration: none;
     outline: none;
-    color: blanchedalmond;
+    color:@teg_a;
     font-size: 1.2em;
 
     &:hover {
     transition: 0.3s;
-    color: cornflowerblue;
+    color: @hoverA;
     }
 }
 
@@ -64,7 +64,7 @@ li {
 input {
     width: 50px;
     height: 18px;
-    background-color: rgb(141, 161, 187);
+    background-color: @inp;
     margin: 4px 5px;
     color: cornsilk;
 }
@@ -74,16 +74,16 @@ button {
     padding: 2px 16px 2px 16px;
     width: 80px;
     height: 27px;
-    background-color: rgb(137, 206, 218);
+    background-color: @butt;
     border-radius: 5px;
 
     &:hover {
-    background-color: rgb(158, 157, 250);
+    background-color: @butHov;
     transition: 0.3s;
     }
 
     &:active {
-    background-color: rgb(99, 90, 182);
+    background-color: @butAct;
     transition: 0.3s;
     }
 }
@@ -94,11 +94,11 @@ button {
     border-radius: 5px;
 }
 .cvetB_1 {
-    background-color: #B0C4DE;
+    background-color: @b1;
 }
 .cvetB_2 {
-    background-color: #9cb0ca;
+    background-color: @b2;
 }
 .cvetB_3 {
-    background-color: #9eb8da;
+    background-color: @b3;
 }
