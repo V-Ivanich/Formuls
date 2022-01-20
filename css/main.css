@@ -617,6 +617,9 @@ h3 {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.attention {
+  color: rgba(214, 64, 64, 0.808);
+}
 .imagess {
   width: 180px;
   height: 180px;
