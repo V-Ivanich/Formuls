@@ -279,3 +279,21 @@ caption {
   padding-left: 8%;
   background-color: #9eb8da;
 }
+.images {
+  display: flex;
+  padding: 0 40px 0 20px;
+  justify-content: space-between;
+}
+.put {
+  width: 260px;
+  height: auto;
+  border: 1px solid #a0a0bb;
+  border-radius: 5px;
+  margin: 10px;
+}
+.put img {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #a3a3a8;
+  border-radius: 5px;
+}
