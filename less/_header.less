@@ -4,8 +4,36 @@ header {
     display: flex;
     justify-content: center;
 }
-@media (max-width: 665px){
-    a {
-        font-size: 1.0em;
-    }
+.menu__list > li {
+  position: relative;
+  margin: 0px 0px 0px 20px;
+}
+
+.menu__sub-list {
+  position: absolute;
+  display: block;
+  top: 100%;
+  right: -25%;
+  background-color: rgba(0, 0, 0, 0.474);
+  border-radius: 5px;
+  padding: 15px;
+  min-width: 100px;
+  visibility: hidden;
+   & li {
+    margin: 0 0 10px 0px;
+   }
+}
+.menu__list > li:hover .menu__sub-list {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+  transition: all .3s ease 0s;
+  pointer-events: all;
+}
+.menu__sub-list li:last-child {
+  margin: 0;
+  
+}
+.menu__arrow {
+  display: none;
 }

@@ -2,283 +2,288 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Формулы для работы!</title>
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Формулы для работы!</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-    <div class="rightMenu">
-        <h4 class="hi_off" id="scrH">Приветствую!</h4>
-        <p class="hi_off" id="scrP">
-            Сбылась мечта, все же я смог сделать программку
-            которую можно запустить на любом устройстве.
-            Наслаждайтесь, и благодарите ;)
-        </p>
-    </div>
-    <div class="myMenu">
-        <p>
-            Ну пока что здесь "рыба", потом что то полезное будет, надеюсь...
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Eius soluta, animi porro dolor reiciendis velit atque
-            quis nulla? Doloribus corrupti maiores similique laudantium est?
-        </p>
-    </div>
-    <header>
-        <ul>
-            <li>
-                <a href="#" class="menuMy">Меню</a>
-            </li>
-            <li>
-                <a href="#">Формулы</a>
-            </li>
-            <li>
-                <a href="#">Расчеты</a>
-            </li>
-            <li>
-                <a href="#">О программе</a>
-            </li>
-            <li>
-                <a href="#" class="spravka">Справка</a>
-            </li>
+  <div class="rightMenu">
+    <h4 class="hi_off" id="scrH">Приветствую!</h4>
+    <p class="hi_off" id="scrP">
+      Сбылась мечта, все же я смог сделать программку
+      которую можно запустить на любом устройстве.
+      Наслаждайтесь, и благодарите ;)
+    </p>
+  </div>
+  <div class="myMenu">
+    <p>
+      Ну пока что здесь "рыба", потом что то полезное будет, надеюсь...
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Eius soluta, animi porro dolor reiciendis velit atque
+      quis nulla? Doloribus corrupti maiores similique laudantium est?
+    </p>
+  </div>
+  <header>
+    <ul class="menu__list">
+      <li>
+        <a href="#" class="menu__link sub_link">Расчеты</a>
+        <span class="menu__arrow"></span>
+
+        <ul class="menu__sub-list">
+          <li><a href="" class="menu__sub-link">Цвет р-т</a></li>
+          <li><a href="" class="menu__sub-link">Фаска Пл.</a></li>
+          <li><a href="" class="menu__sub-link">Блоки Пл.</a></li>
+          <li><a href="" class="menu__sub-link">Блоки Рад.</a></li>
+          <li><a href="" class="menu__sub-link">Сегменты</a></li>
         </ul>
-    </header>
 
-    <main>
+      </li>
+      <li>
+        <a href="#" class="menu__link">О программе</a>
+      </li>
+      <li>
+        <a href="#" class="menu__link">Справка</a>
+      </li>
+    </ul>
+  </header>
 
-        <div class="razdel_1">
+  <main>
 
-            <div class="block-1 cvetB_1">
-                <h2 class="zagolovok-1">Пересчет N относительно &#11585.</h2>
+    <div class="razdel_1">
 
-                <input type="text" class="diamDet" value="0">
-                <label class="lab-a" for="">&#11585 -"1"</label>
+      <div class="block-1 cvetB_1">
+        <h2 class="zagolovok-1">Пересчет N относительно &#11585.</h2>
 
-                <input type="text" class="diamProb" value="0">
-                <label class="lab-b" for="">&#11585 -"2"</label>
+        <input type="text" class="diamDet" value="0">
+        <label class="lab-a" for="">&#11585 -"1"</label>
 
-                <input type="text" class="nDet" value="0">
-                <label class="lab-c" for="">N -"1"</label>
+        <input type="text" class="diamProb" value="0">
+        <label class="lab-b" for="">&#11585 -"2"</label>
 
-                <input type="text" class="nProb" value="0">
-                <label class="lab-d" for="">N -"2"</label>
+        <input type="text" class="nDet" value="0">
+        <label class="lab-c" for="">N -"1"</label>
 
-                <button class="result-1">Расчет</button>
-                <button class="reset-1">Сброс</button>
-                <label for="" class="metka lab">Результат = </label>
-            </div>
+        <input type="text" class="nProb" value="0">
+        <label class="lab-d" for="">N -"2"</label>
 
-            <div class="block-2 cvetB_2">
-                <h2 class="zagolovok-2">Расчет плоской фаски.</h2>
+        <button class="result-1">Расчет</button>
+        <button class="reset-1">Сброс</button>
+        <label for="" class="metka lab">Результат = </label>
+      </div>
 
-                <input type="text" id="diaDet" value="0">
-                <label class="met-1" for="diaDet">&#11585 детали</label>
+      <div class="block-2 cvetB_2">
+        <h2 class="zagolovok-2">Расчет плоской фаски.</h2>
 
-                <input type="text" id="maxDet" value="0">
-                <label class="met-2" for="maxDet">&#11145 допуск</label>
+        <input type="text" id="diaDet" value="0">
+        <label class="met-1" for="diaDet">&#11585 детали</label>
 
-                <input type="text" id="minDet" value="0">
-                <label class="met-3" for="minDet">&#11147 допуск</label>
+        <input type="text" id="maxDet" value="0">
+        <label class="met-2" for="maxDet">&#11145 допуск</label>
+
+        <input type="text" id="minDet" value="0">
+        <label class="met-3" for="minDet">&#11147 допуск</label>
 
 
-                <input type="text" id="diaSvet" value="0">
-                <label class="met-4" for="diaSvet">&#11585 свет.</label>
+        <input type="text" id="diaSvet" value="0">
+        <label class="met-4" for="diaSvet">&#11585 свет.</label>
 
-                <input type="text" id="maxSvet" value="0">
-                <label class="met-5" for="maxSvet">&#11145 допуск</label>
+        <input type="text" id="maxSvet" value="0">
+        <label class="met-5" for="maxSvet">&#11145 допуск</label>
 
-                <input type="text" id="minSvet" value="0">
-                <label class="met-6" for="minSvet">&#11147 допуск</label>
+        <input type="text" id="minSvet" value="0">
+        <label class="met-6" for="minSvet">&#11147 допуск</label>
 
-                <button class="result-2">Расчет</button>
-                <button class="reset-2">Сброс</button>
-                <label for="" class="metka-2 lab">Результат = </label>
-            </div>
+        <button class="result-2">Расчет</button>
+        <button class="reset-2">Сброс</button>
+        <label for="" class="metka-2 lab">Результат = </label>
+      </div>
+
+    </div>
+
+    <div class="block-3 razmet cvetB_3">
+
+      <div class="zagolov">
+        <h2>Расчет плоских блоков.</h2>
+      </div>
+
+      <div class="content">
+
+        <label class="lab-1">Кол-во деталей</label>
+
+        <label class="lab-2">Диаметр детали</label>
+
+        <input type="checkbox" id="chek">
+        <label for="chek" class="lab-3">Диаметр блока</label>
+
+        <input type="number" class="inp-1" value="0">
+
+        <input type="number" class="inp-2" value="0">
+
+        <input type="number" class="inp-3" value="0">
+
+        <button class="rezult">Расчет</button>
+
+        <button class="sbros">Сброс</button>
+
+        <label for="" class="metka-3 lab">&#11585 полировника = </label>
+
+      </div>
+
+      <div class="tabl">
+
+        <table class="variant_1">
+          <caption>Вариант -1</caption>
+          <tr>
+            <th>Ряд №</th>
+            <th>В ряду</th>
+            <th>Всего</th>
+            <th>Диаметр</th>
+          </tr>
+        </table>
+
+        <table class="variant_2">
+          <caption>Вариант -2</caption>
+          <tr>
+            <th>Ряд №</th>
+            <th>В ряду</th>
+            <th>Всего</th>
+            <th>Диаметр</th>
+          </tr>
+        </table>
+
+        <table class="variant_3">
+          <caption>Вариант -3</caption>
+          <tr>
+            <th>Ряд №</th>
+            <th>В ряду</th>
+            <th>Всего</th>
+            <th>Диаметр</th>
+          </tr>
+        </table>
+
+      </div>
+      <div class="images">
+        <div class="jpg1 put">
+          <img src="img/im1.jpg" alt="">
+        </div>
+        <div class="jpg2 put">
+          <img src="img/im2.jpg" alt="">
+        </div>
+        <div class="jpg3 put">
+          <img src="img/im3.jpg" alt="">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="block-4 razmet cvetB_1">
+
+      <h2>Расчет радиусных блоков.</h2>
+      <div class="radius">
+        <h4 class="paragraf1">Параметры детали:</h4>
+        <input type="number" class="radius_1">
+        <label class="r_A">R-"A"</label>
+        <input type="number" class="radius_2">
+        <label class="r_B">R-"B"</label>
+        <input type="number" class="diametrDetaly">
+        <label class="diaMdeT">Диаметр</label>
+        <input type="number" class="tolchina">
+        <label for="" class="tTol">Толщина</label>
+        <h4 class="paragraf2">Кол-во:</h4>
+        <input type="radio" name="grup" class="yes" id="da">
+        <label for="da" class="das">-учитывать</label>
+        <input type="radio" name="grup" checked class="no" id="net">
+        <label for="net" class="nets">-не учитывать</label>
+        <input type="number" class="kol_vo">
+        <label class="shtyk"> -штук</label>
+        <button class="raschetR">Расчет</button>
+        <button class="sbrosR">Сброс</button>
+        <h6 class="storonaA">Сторона - "А"</h6>
+        <label for="" class="DiSch centr">&#11585 шлифовника</label>
+        <label for="" class="DiNak centr">&#11585 наклейника</label>
+        <label for="" class="rNak centr">R - наклейника</label>
+        <label for="" class="DiPol centr">&#11585 полировника</label>
+        <label for="" class="rPol centr">R - полировника</label>
+        <h6 class="storonaB">Сторона - "В"</h6>
+        <label for="" class="slifD centr">&#11585 шлифовника</label>
+        <label for="" class="naklD centr">&#11585 наклейника</label>
+        <label for="" class="naklR centr">R - наклейника</label>
+        <label for="" class="polD centr">&#11585 полировника</label>
+        <label for="" class="polR centr">R - полировника</label>
+
+        <label class="okno1 outL">=</label>
+        <label class="okno2 outL">=</label>
+        <label class="okno3 outL">=</label>
+        <label class="okno4 outL">=</label>
+        <label class="okno5 outL">=</label>
+        <label class="okno6 outL">=</label>
+        <label class="okno7 outL">=</label>
+        <label class="okno8 outL">=</label>
+        <label class="okno9 outL">=</label>
+        <label class="okno10 outL">=</label>
+
+        <h6 class="koli_tvo">Кол-во на блоке</h6>
+      </div>
+    </div>
+
+    <div class="block-5 razmet cvetB_2">
+      <h2>Расчет Сегментов.(экспериментально)</h2>
+      <div class="segments">
+        <input type="number" class="b5in1">
+        <input type="number" class="b5in2">
+        <input type="number" class="b5in3">
+        <input type="number" class="b5in4">
+        <input type="number" class="b5in5">
+        <input type="checkbox" id="razmer">
+        <label for="" class="b5lab1 centr">&#11585 детали</label>
+        <label for="" class="b5lab2 centr">Кол-во</label>
+        <label for="" class="b5lab3 centr">&#11585 полир-ка</label>
+        <label for="" class="b5lab4 centr">Размер &#9032</label>
+        <label for="" class="b5lab5 centr">Размер &#9047</label>
+        <label for="razmer" class="b5lab6 centr">&#9032 &#9047</label>
+        <button class="result_3">Расчет</button>
+        <button class="reset_3">Сброс</button>
+      </div>
+
+      <div class="vizual">
+
+        <div class="levoe">
+
+          <div class="imagess">
+            <div class="krug"></div>
+            <div class="krug_big"></div>
+          </div>
 
         </div>
 
-        <div class="block-3 razmet cvetB_3">
-
-            <div class="zagolov">
-                <h2>Расчет плоских блоков.</h2>
-            </div>
-
-            <div class="content">
-
-                <label class="lab-1">Кол-во деталей</label>
-
-                <label class="lab-2">Диаметр детали</label>
-
-                <input type="checkbox" id="chek">
-                <label for="chek" class="lab-3">Диаметр блока</label>
-
-                <input type="number" class="inp-1" value="0">
-
-                <input type="number" class="inp-2" value="0">
-
-                <input type="number" class="inp-3" value="0">
-
-                <button class="rezult">Расчет</button>
-
-                <button class="sbros">Сброс</button>
-
-                <label for="" class="metka-3 lab">&#11585 полировника = </label>
-
-            </div>
-
-            <div class="tabl">
-
-                <table class="variant_1">
-                    <caption>Вариант -1</caption>
-                    <tr>
-                        <th>Ряд №</th>
-                        <th>В ряду</th>
-                        <th>Всего</th>
-                        <th>Диаметр</th>
-                    </tr>
-                </table>
-
-                <table class="variant_2">
-                    <caption>Вариант -2</caption>
-                    <tr>
-                        <th>Ряд №</th>
-                        <th>В ряду</th>
-                        <th>Всего</th>
-                        <th>Диаметр</th>
-                    </tr>
-                </table>
-
-                <table class="variant_3">
-                    <caption>Вариант -3</caption>
-                    <tr>
-                        <th>Ряд №</th>
-                        <th>В ряду</th>
-                        <th>Всего</th>
-                        <th>Диаметр</th>
-                    </tr>
-                </table>
-
-            </div>
-            <div class="images">
-                <div class="jpg1 put">
-                    <img src="img/im1.jpg" alt="">
-                </div>
-                <div class="jpg2 put">
-                    <img src="img/im2.jpg" alt="">
-                </div>
-                <div class="jpg3 put">
-                    <img src="img/im3.jpg" alt="">
-                </div>
-                
-            </div>
+        <div class="pravoe">
+          <h3>Информация по расчету :</h3>
+          <label for="">&#11585 внутр.</label>
+          <label for="">=</label>
+          <br>
+          <label for="">Растояние между вершинами</label>
+          <label for="">=</label>
+          <br>
+          <label for="">Кол-во лучей</label>
+          <label for="">=</label>
+          <p class="attention">!!! Данную информацию Вы используете
+            на свой страх и риск. Используя
+            эту информацию, Вы соглашаетесь
+            на эксперименты, и как итог, -сроки на изготовление могут увеличиться !!!
+          </p>
         </div>
 
-        <div class="block-4 razmet cvetB_1">
+      </div>
+    </div>
 
-            <h2>Расчет радиусных блоков.</h2>
-            <div class="radius">
-                <h4 class="paragraf1">Параметры детали:</h4>
-                <input type="number" class="radius_1">
-                <label class="r_A">R-"A"</label>
-                <input type="number" class="radius_2">
-                <label class="r_B">R-"B"</label>
-                <input type="number" class="diametrDetaly">
-                <label class="diaMdeT">Диаметр</label>
-                <input type="number" class="tolchina">
-                <label for="" class="tTol">Толщина</label>
-                <h4 class="paragraf2">Кол-во:</h4>
-                <input type="radio" name="grup" class="yes" id="da">
-                <label for="da" class="das">-учитывать</label>
-                <input type="radio" name="grup" checked class="no" id="net">
-                <label for="net" class="nets">-не учитывать</label>
-                <input type="number" class="kol_vo">
-                <label class="shtyk"> -штук</label>
-                <button class="raschetR">Расчет</button>
-                <button class="sbrosR">Сброс</button>
-                <h6 class="storonaA">Сторона - "А"</h6>
-                <label for="" class="DiSch centr">&#11585 шлифовника</label>
-                <label for="" class="DiNak centr">&#11585 наклейника</label>
-                <label for="" class="rNak centr">R - наклейника</label>
-                <label for="" class="DiPol centr">&#11585 полировника</label>
-                <label for="" class="rPol centr">R - полировника</label>
-                <h6 class="storonaB">Сторона - "В"</h6>
-                <label for="" class="slifD centr">&#11585 шлифовника</label>
-                <label for="" class="naklD centr">&#11585 наклейника</label>
-                <label for="" class="naklR centr">R - наклейника</label>
-                <label for="" class="polD centr">&#11585 полировника</label>
-                <label for="" class="polR centr">R - полировника</label>
-
-                <label class="okno1 outL">=</label>
-                <label class="okno2 outL">=</label>
-                <label class="okno3 outL">=</label>
-                <label class="okno4 outL">=</label>
-                <label class="okno5 outL">=</label>
-                <label class="okno6 outL">=</label>
-                <label class="okno7 outL">=</label>
-                <label class="okno8 outL">=</label>
-                <label class="okno9 outL">=</label>
-                <label class="okno10 outL">=</label>
-
-                <h6 class="koli_tvo">Кол-во на блоке</h6>
-            </div>
-        </div>
-
-        <div class="block-5 razmet cvetB_2">
-            <h2>Расчет Сегментов.(экспериментально)</h2>
-            <div class="segments">
-                <input type="number" class="b5in1">
-                <input type="number" class="b5in2">
-                <input type="number" class="b5in3">
-                <input type="number" class="b5in4">
-                <input type="number" class="b5in5">
-                <input type="checkbox" id="razmer">
-                <label for="" class="b5lab1 centr">&#11585 детали</label>
-                <label for="" class="b5lab2 centr">Кол-во</label>
-                <label for="" class="b5lab3 centr">&#11585 полир-ка</label>
-                <label for="" class="b5lab4 centr">Размер &#9032</label>
-                <label for="" class="b5lab5 centr">Размер &#9047</label>
-                <label for="razmer" class="b5lab6 centr">&#9032 &#9047</label>
-                <button class="result_3">Расчет</button>
-                <button class="reset_3">Сброс</button>
-            </div>
-
-            <div class="vizual">
-
-                <div class="levoe">
-
-                    <div class="imagess">
-                        <div class="krug"></div>
-                        <div class="krug_big"></div>
-                    </div>
-
-                </div>
-
-                <div class="pravoe">
-                    <h3>Информация по расчету :</h3>
-                    <label for="">&#11585 внутр.</label>
-                    <label for="">=</label>
-                    <br>
-                    <label for="">Растояние между вершинами</label>
-                    <label for="">=</label>
-                    <br>
-                    <label for="">Кол-во лучей</label>
-                    <label for="">=</label>
-                    <p class="attention">!!! Данную информацию Вы используете
-                        на свой страх и риск. Используя
-                        эту информацию, Вы соглашаетесь
-                        на эксперименты, и как итог, -сроки на изготовление могут увеличиться !!!
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
-    </main>
-    <script src="js_code/main.js"></script>
-    <script src="js_code/panel.js"></script>
+  </main>
+  <script src="js_code/main.js"></script>
+  <script src="js_code/panel.js"></script>
 </body>
 
 </html>
