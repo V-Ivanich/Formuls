@@ -4,3 +4,8 @@ header {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 665px) {
+  a {
+    font-size: 1em;
+  }
+}

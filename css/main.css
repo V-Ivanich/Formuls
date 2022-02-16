@@ -93,6 +93,11 @@ header {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 665px) {
+  a {
+    font-size: 1em;
+  }
+}
 /* первый раздел */
 .razdel_1 {
   display: flex;
@@ -162,6 +167,15 @@ header {
 .metka {
   grid-row: 7/8;
   grid-column: 2/6;
+}
+@media (max-width: 815px) {
+  .razdel_1 {
+    display: block;
+  }
+  .block-1,
+  .block-2 {
+    width: 100%;
+  }
 }
 /* блок плоской фаски */
 .zagolovok-2 {
