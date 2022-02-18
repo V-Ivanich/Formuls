@@ -11,7 +11,6 @@ html {
 body {
   max-width: 1024px;
   margin: 0 auto;
-  overflow-x: hidden;
 }
 p {
   margin-top: 20px;
@@ -56,7 +55,7 @@ button {
   margin: 2px 2px;
   padding: 2px 16px 2px 16px;
   width: 80px;
-  height: 27px;
+  height: 28px;
   background-color: #89ceda;
   border-radius: 5px;
 }
@@ -80,6 +79,64 @@ button:active {
 }
 .cvetB_3 {
   background-color: #9eb8da;
+}
+.header {
+  background-color: #607488;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  margin: 0px 0px 20px 0px;
+  left: 0;
+}
+.header__container {
+  max-width: 1200px;
+  margin: 0px auto;
+  display: flex;
+  padding: 0px 30px;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+}
+.menu__list > li {
+  position: relative;
+  margin: 0px 20px 0px 20px;
+}
+.emty {
+  content: "";
+  height: 70px;
+}
+.menu__sub-list {
+  position: absolute;
+  display: block;
+  top: 100%;
+  right: -25%;
+  background-color: rgba(0, 0, 0, 0.474);
+  border-radius: 5px;
+  padding: 15px;
+  min-width: 120px;
+  visibility: hidden;
+}
+.menu__sub-list li {
+  margin: 0px 10px 10px 0px;
+}
+.menu__list > li:hover .menu__sub-list {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+  transition: all 0.3s ease 0s;
+  pointer-events: all;
+}
+.menu__sub-list li:last-child {
+  margin: 0;
+}
+.menu__icon {
+  display: none;
+}
+.menu__arrow {
+  display: none;
 }
 @media (min-width: 450px) {
   .menu__list {
@@ -144,11 +201,11 @@ button:active {
   .menu__body {
     position: fixed;
     top: 0;
-    left: -100%;
+    left: -120%;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.712);
-    padding: 100px 30px 30px 30px;
+    padding: 100px 30px 30px 35px;
     transition: left 0.3s ease 0s;
     overflow: auto;
   }
