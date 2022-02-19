@@ -86,31 +86,33 @@
     width: 30px;
     height: 18px;
     cursor: pointer;
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+    &::before,
+    &::after {
+      content: "";
+    }
+    & span,
+    &::before,
+    &::after {
+      left: 0px;
+      position: absolute;
+      height: 10%;
+      width: 100%;
+      transition: all .3s ease 0s;
+      background-color: #fff;
+    }
+    & span {
+      top: 50%;
+      transform: scale(1) translate(0px, -50%);
+    }
   }
-  .menu__icon span,
-  .menu__icon::before,
-  .menu__icon::after {
-    left: 0;
-    position: absolute;
-    height: 10%;
-    width: 100%;
-    transition: all .3s ease 0s;
-    background-color: #fff;
-  }
-  .menu__icon::before,
-  .menu__icon::after {
-    content: "";
-  }
-  .menu__icon::before,{
-    top: 0;
-  }
-  .menu__icon::after {
-    bottom: 0;
-  }
-  .menu__icon span {
-    top: 50%;
-    transform: scale(1) translate(0px, -50%);
-  }
+ 
+
   .menu__icon._active span {
     transform: scale(0) translate(0px, -50%);
   }
@@ -125,7 +127,7 @@
   .menu__body {
     position: fixed;
     top: 0;
-    left: -120%;
+    left: -100%;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.712);
