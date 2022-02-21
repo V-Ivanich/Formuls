@@ -373,7 +373,7 @@ body._touch .menu__list > li._active .menu__arrow {
   grid-row: 7/8;
   grid-column: 2/6;
 }
-@media (max-width: 815px) {
+@media (max-width: 575px) {
   .razdel_1 {
     display: block;
   }
@@ -382,6 +382,9 @@ body._touch .menu__list > li._active .menu__arrow {
     width: 100%;
     font-size: 20px;
   }
+}
+@media (max-width: 375px) {
+  font-size: 18px;
 }
 /* блок плоской фаски */
 .zagolovok-2 {
@@ -459,4 +462,9 @@ body._touch .menu__list > li._active .menu__arrow {
 .metka-3 {
   grid-row: 2/3;
   grid-column: 5/6;
+}
+@media (max-width: 575px) {
+  h2 {
+    font-size: 20px;
+  }
 }
