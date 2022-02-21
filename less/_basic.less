@@ -71,9 +71,10 @@ input {
 
 button {
     margin: 2px 2px;
-    padding: 2px 16px 2px 16px;
+    padding: 2px 5px;
     width: 80px;
     height: @btnPc;
+    font-size: 16px;
     background-color: @butt;
     border-radius: 5px;
 
@@ -88,6 +89,7 @@ button {
     }
 }
 
+
 // разметка для блоков
 .razmet {
     padding: 0px 20px 15px 20px;
@@ -101,4 +103,32 @@ button {
 }
 .cvetB_3 {
     background-color: @b3;
+}
+//миксин адаптив первых 2-х формул
+.mixGrid {
+    .block-1,.block-2 {
+        grid-template-rows: repeat(8, 40px);
+        grid-template-columns: 10px .35fr .2fr .35fr .3fr;
+        font-size: 16px;
+    }
+    .inPut {
+        width: 60px;
+        height: 28px;
+    }
+    .result-1 {
+        grid-row: 6/7;
+        grid-column: 2/3;
+        justify-self: end;
+    }
+    .reset-1 { 
+        justify-self: start;
+    }
+    .result-2 {
+        grid-row: 6/7;
+        grid-column: 2/3;
+        justify-self: end;
+    }  
+    .reset-2 {
+        justify-self: start;
+    }
 }

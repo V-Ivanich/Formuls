@@ -60,9 +60,10 @@ input {
 }
 button {
   margin: 2px 2px;
-  padding: 2px 16px 2px 16px;
+  padding: 2px 5px;
   width: 80px;
   height: 28px;
+  font-size: 16px;
   background-color: #89ceda;
   border-radius: 5px;
 }
@@ -86,6 +87,32 @@ button:active {
 }
 .cvetB_3 {
   background-color: #9eb8da;
+}
+.mixGrid .block-1,
+.mixGrid .block-2 {
+  grid-template-rows: repeat(8, 40px);
+  grid-template-columns: 10px 0.35fr 0.2fr 0.35fr 0.3fr;
+  font-size: 16px;
+}
+.mixGrid .inPut {
+  width: 60px;
+  height: 28px;
+}
+.mixGrid .result-1 {
+  grid-row: 6/7;
+  grid-column: 2/3;
+  justify-self: end;
+}
+.mixGrid .reset-1 {
+  justify-self: start;
+}
+.mixGrid .result-2 {
+  grid-row: 6/7;
+  grid-column: 2/3;
+  justify-self: end;
+}
+.mixGrid .reset-2 {
+  justify-self: start;
 }
 .wrapper {
   min-height: 100%;
@@ -191,7 +218,7 @@ body._touch .menu__list > li._active .menu__arrow {
   position: static;
   margin-right: 25px;
 }
-@media (min-width: 575px) {
+@media (max-width: 1200px) {
   .menu__list {
     display: flex;
     align-items: center;
@@ -285,6 +312,9 @@ body._touch .menu__list > li._active .menu__arrow {
   .menu__list > li:last-child {
     margin-bottom: 0;
   }
+  .menu__list {
+    display: block;
+  }
   .menu__list > li._active .menu__sub-list {
     display: block;
   }
@@ -306,17 +336,13 @@ body._touch .menu__list > li._active .menu__arrow {
 /* первый раздел */
 .razdel_1 {
   display: flex;
+  border-radius: 5px;
 }
-.block-1 {
-  width: 50%;
-  display: grid;
-  grid-template-rows: repeat(8, 30px);
-  grid-template-columns: 40px 0.4fr 0.5fr 0.4fr 0.5fr;
-}
+.block-1,
 .block-2 {
   width: 50%;
   display: grid;
-  grid-template-rows: repeat(8, 30px);
+  grid-template-rows: repeat(8, 35px);
   grid-template-columns: 40px 0.4fr 0.5fr 0.4fr 0.5fr;
 }
 .zagolovok-1 {
@@ -373,6 +399,12 @@ body._touch .menu__list > li._active .menu__arrow {
   grid-row: 7/8;
   grid-column: 2/6;
 }
+.lab {
+  align-self: end;
+}
+.labInp {
+  align-self: center;
+}
 @media (max-width: 575px) {
   .razdel_1 {
     display: block;
@@ -382,9 +414,6 @@ body._touch .menu__list > li._active .menu__arrow {
     width: 100%;
     font-size: 20px;
   }
-}
-@media (max-width: 375px) {
-  font-size: 18px;
 }
 /* блок плоской фаски */
 .zagolovok-2 {
@@ -466,5 +495,33 @@ body._touch .menu__list > li._active .menu__arrow {
 @media (max-width: 575px) {
   h2 {
     font-size: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .block-1,
+  .block-2 {
+    grid-template-rows: repeat(8, 40px);
+    grid-template-columns: 10px 0.35fr 0.2fr 0.35fr 0.3fr;
+    font-size: 16px;
+  }
+  .inPut {
+    width: 60px;
+    height: 28px;
+  }
+  .result-1 {
+    grid-row: 6/7;
+    grid-column: 2/3;
+    justify-self: end;
+  }
+  .reset-1 {
+    justify-self: start;
+  }
+  .result-2 {
+    grid-row: 6/7;
+    grid-column: 2/3;
+    justify-self: end;
+  }
+  .reset-2 {
+    justify-self: start;
   }
 }

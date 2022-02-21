@@ -1,19 +1,13 @@
 /* первый раздел */
 .razdel_1 {
     display: flex;
+    border-radius: 5px;
 }
 
-.block-1 {
+.block-1,.block-2 {
     width: 50%;
     display: grid;
-    grid-template-rows: repeat(8, 30px);
-    grid-template-columns: 40px .4fr .5fr .4fr .5fr;
-}
-
-.block-2 {
-    width: 50%;
-    display: grid;
-    grid-template-rows: repeat(8, 30px);
+    grid-template-rows: repeat(8, 35px);
     grid-template-columns: 40px .4fr .5fr .4fr .5fr;
 }
 
@@ -82,6 +76,12 @@
     grid-row: 7/8;
     grid-column: 2/6;
 }
+.lab {
+    align-self: end;
+}
+.labInp {
+    align-self: center;
+}
 @media (max-width: 575px) {
     .razdel_1 {
         display: block;
@@ -91,7 +91,4 @@
         width: 100%;
         font-size: 20px;
     }
-}
-@media (max-width: 375px) {
-    font-size: 18px;
 }

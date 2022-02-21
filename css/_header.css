@@ -102,7 +102,7 @@ body._touch .menu__list > li._active .menu__arrow {
   position: static;
   margin-right: 25px;
 }
-@media (min-width: 575px) {
+@media (max-width: 1200px) {
   .menu__list {
     display: flex;
     align-items: center;
@@ -195,6 +195,9 @@ body._touch .menu__list > li._active .menu__arrow {
   }
   .menu__list > li:last-child {
     margin-bottom: 0;
+  }
+  .menu__list {
+    display: block;
   }
   .menu__list > li._active .menu__sub-list {
     display: block;
