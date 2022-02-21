@@ -21,7 +21,7 @@
 }
 .header__logo {
   border-radius: 50%;
-  background-color: aliceblue;
+  background-color: #f79898;
   position: relative;
   margin-left: 20px;
   z-index: 5;
@@ -102,7 +102,7 @@ body._touch .menu__list > li._active .menu__arrow {
   position: static;
   margin-right: 25px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 2560px) {
   .menu__list {
     display: flex;
     align-items: center;

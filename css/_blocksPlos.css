@@ -297,3 +297,8 @@ caption {
   border: 1px solid #a3a3a8;
   border-radius: 5px;
 }
+@media (max-width: 856px) {
+  .tabl {
+    display: block;
+  }
+}
