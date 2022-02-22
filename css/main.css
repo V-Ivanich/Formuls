@@ -397,10 +397,11 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 .metka {
   grid-row: 7/8;
-  grid-column: 2/6;
+  grid-column: 2/5;
 }
 .lab {
   align-self: end;
+  background-color: rgba(247, 159, 128, 0.575);
 }
 .labInp {
   align-self: center;
@@ -476,7 +477,7 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 .metka-2 {
   grid-row: 7/8;
-  grid-column: 2/6;
+  grid-column: 2/5;
 }
 .result-2 {
   grid-row: 6/7;
@@ -497,7 +498,7 @@ body._touch .menu__list > li._active .menu__arrow {
     font-size: 20px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .block-1,
   .block-2 {
     grid-template-rows: repeat(8, 40px);
@@ -570,13 +571,6 @@ body._touch .menu__list > li._active .menu__arrow {
   grid-column: 2/3;
   justify-self: start;
   margin-left: 0;
-}
-.lab {
-  margin: 5px 30px 0px 20px;
-  padding-left: 10px;
-  font-size: 1.2em;
-  color: #291a6b;
-  background-color: rgba(255, 127, 80, 0.685);
 }
 .rezult {
   grid-row: 1/2;

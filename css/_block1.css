@@ -62,10 +62,11 @@
 }
 .metka {
   grid-row: 7/8;
-  grid-column: 2/6;
+  grid-column: 2/5;
 }
 .lab {
   align-self: end;
+  background-color: rgba(247, 159, 128, 0.575);
 }
 .labInp {
   align-self: center;
