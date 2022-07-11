@@ -14,11 +14,32 @@
 html {
   max-width: 1024px;
   margin: 0 auto;
-  background: #708090;
   font-family: "Roboto";
 }
 
-body {
+.scene {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  min-height: 100vh;
+}
+
+.layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 110%;
+  height: 100%;
+}
+
+.layer-bg {
+  background: url(../img/back.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
   max-width: 1024px;
   margin: 0 auto;
 }
@@ -400,6 +421,11 @@ body._touch .menu__list > li._active .menu__arrow {
   border-radius: 5px;
 }
 
+span {
+  color: rgba(202, 150, 150, 0.749);
+  font-size: 1.3em;
+}
+
 .cardFormul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -411,18 +437,64 @@ body._touch .menu__list > li._active .menu__arrow {
           align-items: center;
   border: 1px solid #607488;
   border-radius: 12px;
-  margin: 20px 0px;
+  margin: 30px 0px;
   background: #b0c4de;
 }
 
 .cardItem {
-  border: 1px solid #3d5fa8;
+  border: 1px solid rgba(194, 220, 223, 0.662745098);
   border-radius: 5px;
   height: 92%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   margin: 0 4px;
+}
+
+.cardWords {
+  font-size: 1.2em;
+  margin-left: 10px;
+  padding-right: 12px;
+  color: #607488;
+  text-indent: 1.5em;
+}
+
+.cardOne {
+  width: 55%;
+}
+
+.cardTwo {
+  width: 30%;
+}
+
+.img-1 {
+  background-image: url(../img/test_1.jpg);
+  background-size: 100%;
+}
+
+.img-2 {
+  background-image: url(../img/test_2.jpg);
+  background-size: 100%;
+}
+
+.img-3 {
+  background-image: url(../img/test_3.jpg);
+  background-size: 100%;
+}
+
+.cardThree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 15%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.start {
+  padding: 4px 6px;
+  border-radius: 20px;
 }
 
 .block-1, .block-2 {

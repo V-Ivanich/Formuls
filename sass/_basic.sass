@@ -12,13 +12,39 @@
 html
   max-width: 1024px
   margin: 0 auto
-  background: $osnova
   font-family: 'Roboto'
 
-body
+.scene
+  position: fixed
+  left: 0
+  top: 0
+  bottom: 0
+  right: 0
+  min-height: 100vh
+
+.layer
+  position: absolute
+  left: 0
+  top: 0
+  width: 110%
+  height: 100%
+
+.layer-bg
+  background: url(../img/back.jpg) center no-repeat
+  background-size: cover
+
+// .layer-1
+//   background: url(../img/back.jpg) center no-repeat
+//   background-size: cover
+
+// .layer-2
+//   background: url(../img/back.jpg) center no-repeat
+//   background-size: cover
+
+.wrapper
   max-width: 1024px
   margin: 0 auto
-  // overflow-x: hidden
+
 
 p
   margin-top: 20px
