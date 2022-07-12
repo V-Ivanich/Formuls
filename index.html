@@ -13,9 +13,9 @@
 <body>
 
   <div class="scene">
-    <div class="layer layer-bg"></div>
-    <div class="layer layer-1"></div>
-    <div class="layer layer-2"></div>
+    <div data_speed=4 class="layer layer-bg" id="layer"></div>
+    <div data_speed=10 class="layer layer-1"></div>
+    <div data_speed=24 class="layer layer-2"></div>
   </div>
   <div class="wrapper">
     <header class="header">
@@ -54,6 +54,7 @@
 
     <main>
       <div class="emty"></div>
+
       <div class="cardFormul">
         <div class="cardItem cardOne">
           <p class="cardWords">
@@ -68,7 +69,9 @@
         <div class="cardItem cardThree">
           <button class="start">Старт</button>
         </div>
+        <div class="modalWindow"></div>
       </div>
+
       <div class="cardFormul">
         <div class="cardItem cardOne">
           <p class="cardWords">
@@ -84,12 +87,14 @@
           <button class="start">Старт</button>
         </div>
       </div>
+
       <div class="cardFormul">
         <div class="cardItem cardOne">
           <p class="cardWords">
-            Не имея подходящего пробного стекла, можно пересчитать
-            цвет а так же местную ошибку, под имеющийся диаметр детали или
-            пробного стекла. Так же это справедливо для интерферометра.
+            Формула <span>расчета фаски с учетом припуска</span> на обработку, позволяет
+            расчитать нужный радиус чашки для нанесения фаски под нужным
+            углом. И так же величину этой фаски для последующей обработки
+            детали.
             Что бы начать пересчет нужно нажать на кнопку 'Старт', и в
             всплывающем окне вносим необходимые данные.
           </p>

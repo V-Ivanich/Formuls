@@ -44,10 +44,27 @@ if (isMobile.any()) {
 let dia1 = document.querySelector('.diamDet');
 let dia2 = document.querySelector('.diamProb');
 let cvet1 = document.querySelector('.nDet');
-let cvet2 = document.querySelector('.nProb');
-let ress = 0;
-let d1, d2;
-let n1, n2;
+let cvet2 = document.querySelector('.nProb'),
+  ress = 0,
+  d1,
+  d2,
+  n1,
+  n2;
+
+//! параллакс
+const layers = document.querySelectorAll('.layer')
+const globLeft = document.querySelector('#layer').getBoundingClientRect().left;
+
+window.addEventListener('mousemove', layersMove)
+
+function layersMove(event){
+  layers.forEach(item => {
+    let dataAtr = item.getAttribute('data_speed')
+    let posX = event.clientX
+    let posLeft = dataAtr * posX / 1000
+    item.style.left = `${globLeft + posLeft}px`
+  })
+}
 
 function resetCvet() {
   dia1.value = '';
