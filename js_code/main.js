@@ -51,6 +51,15 @@ let cvet2 = document.querySelector('.nProb'),
   n1,
   n2;
 
+let btn_module = document.querySelectorAll('.cardFormul')
+
+for (let i = 0; i < btn_module.length; i++){
+  btn_module[i].onclick = function(event) {
+    if(event.target.classList.contains('start')){
+      this.lastElementChild.classList.toggle('hides')
+    }
+  }
+}
 //! параллакс
 const layers = document.querySelectorAll('.layer')
 const globLeft = document.querySelector('#layer').getBoundingClientRect().left;
@@ -65,6 +74,7 @@ function layersMove(event){
     item.style.left = `${globLeft + posLeft}px`
   })
 }
+//! конец параллакса
 
 function resetCvet() {
   dia1.value = '';

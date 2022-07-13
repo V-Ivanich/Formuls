@@ -61,15 +61,15 @@
             Не имея подходящего пробного стекла, можно <span>пересчитать
               цвет</span>, а так же местную ошибку, под имеющийся диаметр детали или
             пробного стекла. Так же это справедливо для интерферометра.
-            Что бы начать пересчет нужно нажать на кнопку 'Старт', и в
+            Что бы начать пересчет нужно нажать на кнопку 'Старт', и во
             всплывающем окне вносим необходимые данные.
           </p>
         </div>
         <div class="cardItem cardTwo img-1"></div>
         <div class="cardItem cardThree">
-          <button class="start">Старт</button>
+          <button id='moduleBtn' class="start">Старт</button>
         </div>
-        <div class="modalWindow">
+        <div class="modalWindow hides">
           <div class="block-1">
 
             <input type="text" class="diamDet inPut" value="0">
@@ -97,15 +97,15 @@
             С помощью формулы <span>плоская фаска</span>, можно расчитать
             ширину этой фаски, по одной стороне. Для измерения фаски с помощью
             фаскомера.
-            Что бы начать пересчет нужно нажать на кнопку 'Старт', и в
+            Что бы начать пересчет нужно нажать на кнопку 'Старт', и во
             всплывающем окне вносим необходимые данные.
           </p>
         </div>
         <div class="cardItem cardTwo img-2"></div>
         <div class="cardItem cardThree">
-          <button class="start">Старт</button>
+          <button id='moduleBtn' class="start">Старт</button>
         </div>
-        <div class="modalWindow">
+        <div class="modalWindow hides">
           <div class="block-2">
 
             <input type="text" id="diaDet" class="inPut" value="0">
@@ -141,20 +141,41 @@
             расчитать нужный радиус чашки для нанесения фаски под нужным
             углом. И так же величину этой фаски для последующей обработки
             детали.
-            Что бы начать пересчет нужно нажать на кнопку 'Старт', и в
+            Что бы начать пересчет нужно нажать на кнопку 'Старт', и во
             всплывающем окне вносим необходимые данные.
           </p>
         </div>
         <div class="cardItem cardTwo img-3"></div>
         <div class="cardItem cardThree">
-          <button class="start">Старт</button>
+          <button id='moduleBtn' class="start">Старт</button>
+        </div>
+        <div class="modalWindow hides">
+          <div class="block-f45">
+            <label class="text-met1 labInp" for="faska45">Фаска под 45</label>
+            <input type="checkbox" name="f45" id="faska45">
+
+            <input type="text" id="diaDet45" class="inPut" value="0">
+            <label class="text-met2 labInp" for="diaDet45">&#11585 дет.</label>
+
+            <input type="text" id="maxFaska" class="inPut" value="0">
+            <label class="text-met3 labInp" for="maxFaska">&#8679 фаска</label>
+
+            <input type="text" id="f45_tol" class="inPut" value="0">
+            <label class="text-met4 labInp" for="f45_tol">Припуск на толщину</label>
+
+
+            <input type="text" id="rad_ius" class="inPut" value="0">
+            <label class="text-met5 labInp" for="rad_ius">R- чашки</label>
+
+
+            <button class="result_F45">Расчет</button>
+            <button class="reset_F45">Сброс</button>
+            <label for="" class="text_met_res lab">Результат = </label>
+          </div>
         </div>
       </div>
 
-      <div class="razdel_1">
-
-
-      </div>
+      <div class="razdel_1"></div>
 
       <div class="block-3 razmet cvetB_3">
 

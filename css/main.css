@@ -121,6 +121,10 @@ button:active {
   transition: 0.3s;
 }
 
+.hides {
+  visibility: hidden;
+}
+
 .razmet {
   padding: 0px 20px 15px 20px;
   border-radius: 5px;
@@ -146,8 +150,7 @@ button:active {
   z-index: 10;
   margin: 0px 0px 20px 0px;
   left: 0;
-  border-bottom: 1px solid #9eb8da;
-  border-top: 1px solid #9eb8da;
+  border-bottom: 1px solid #fff;
 }
 
 .header__container {
@@ -491,7 +494,7 @@ span {
   height: inherit;
 }
 
-.block-1, .block-2 {
+.block-1, .block-2, .block-f45 {
   display: grid;
   grid-template-rows: 20px repeat(5, 34px);
   grid-template-columns: 15px repeat(8, 0.3fr);
@@ -673,6 +676,78 @@ span {
     font-size: 20px;
   }
 }
+#faska45 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  justify-self: center;
+}
+
+.text-met1 {
+  grid-row: 2/3;
+  grid-column: 3/6;
+}
+
+#rad_ius {
+  grid-row: 2/3;
+  grid-column: 6/8;
+  justify-self: center;
+}
+
+.text-met5 {
+  grid-row: 2/3;
+  grid-column: 8/10;
+}
+
+#diaDet45 {
+  grid-row: 3/4;
+  grid-column: 2/4;
+  justify-self: center;
+}
+
+.text-met2 {
+  grid-row: 3/4;
+  grid-column: 4/6;
+}
+
+#maxFaska {
+  grid-row: 3/4;
+  grid-column: 6/8;
+  justify-self: center;
+}
+
+.text-met3 {
+  grid-row: 3/4;
+  grid-column: 8/10;
+}
+
+#f45_tol {
+  grid-row: 4/5;
+  grid-column: 2/4;
+  justify-self: center;
+}
+
+.text-met4 {
+  grid-row: 4/5;
+  grid-column: 4/8;
+}
+
+.result_F45 {
+  grid-row: 5/6;
+  grid-column: 3/5;
+  justify-self: center;
+}
+
+.reset_F45 {
+  grid-row: 5/6;
+  grid-column: 6/8;
+  justify-self: center;
+}
+
+.text_met_res {
+  grid-row: 6/7;
+  grid-column: 2/9;
+}
+
 .content {
   display: grid;
   grid-template-rows: repeat(3, 30px);
