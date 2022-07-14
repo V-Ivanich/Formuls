@@ -122,7 +122,9 @@ button:active {
 }
 
 .hides {
-  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .razmet {
@@ -492,6 +494,8 @@ span {
   background: rgba(159, 189, 192, 0.7137254902);
   width: 350px;
   height: inherit;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .block-1, .block-2, .block-f45 {
