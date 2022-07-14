@@ -498,7 +498,7 @@ span {
   transition: all 1s;
 }
 
-.block-1, .block-2, .block-f45 {
+.block-1, .block-2 {
   display: grid;
   grid-template-rows: 20px repeat(5, 34px);
   grid-template-columns: 15px repeat(8, 0.3fr);
@@ -680,6 +680,12 @@ span {
     font-size: 20px;
   }
 }
+.block-f45 {
+  display: grid;
+  grid-template-rows: 6px repeat(4, 33px) repeat(2, 24px);
+  grid-template-columns: 15px repeat(8, 0.3fr);
+}
+
 #faska45 {
   grid-row: 2/3;
   grid-column: 2/3;
@@ -749,7 +755,20 @@ span {
 
 .text_met_res {
   grid-row: 6/7;
-  grid-column: 2/9;
+  grid-column: 2/10;
+}
+
+#str45_2 {
+  grid-row: 7/8;
+  grid-column: 2/10;
+}
+
+.lab_45 {
+  -ms-flex-item-align: end;
+      align-self: end;
+  font-size: 16px;
+  padding-left: 10px;
+  background-color: rgba(247, 159, 128, 0.575);
 }
 
 .content {

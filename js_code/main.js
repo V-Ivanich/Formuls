@@ -41,6 +41,77 @@ if (isMobile.any()) {
   document.body.classList.add('_pc');
 }
 
+//? переменные для фаски 45 градусов
+const dia_f45 = document.querySelector('#diaDet45'),
+  max_faska45 = document.querySelector('#maxFaska'),
+  chek_45 = document.querySelector('#faska45'),
+  t_f45 =document.querySelector('#f45_tol'),
+  r_chash =document.querySelector('#rad_ius'),
+  out_text = document.querySelector('.text_met_res'),
+  btn_res45 = document.querySelector('.result_F45'),
+  btn_cls45 = document.querySelector('.reset_F45'),
+  text2_out = document.querySelector('#str45_2')
+
+
+let out1_text = '',
+  out2_text = '',
+  temp45_1,
+  temp45_2
+
+chek_45.addEventListener('click', () =>{
+  if(chek_45.checked){
+    r_chash.disabled = true
+  } else r_chash.disabled = false
+})
+
+btn_cls45.addEventListener('click', () => {
+  out_text.innerText = '='
+  text2_out.innerText = '='
+  dia_f45.value = ''
+  max_faska45.value = ''
+  t_f45.value = ''
+  r_chash.value = ''
+
+})
+
+btn_res45.addEventListener('click', () =>{
+  if(chek_45.checked){
+    temp45_1 = +dia_f45.value * 0.7
+    temp45_2 = Math.sqrt(Math.pow(+t_f45.value, 2) * 2) + +max_faska45.value
+    out_text.innerText = 'R чашки = ' + temp45_1.toFixed(2) + ' мм.'
+    text2_out.innerText = 'Фаска с прип. = ' + temp45_2.toFixed(3) + 'мм'
+  } else {
+    let r_ch = +r_chash.value
+    let r_det = +dia_f45.value/2
+    let d = Math.sqrt(Math.pow(r_ch, 2) - Math.pow(r_det, 2))
+    let alfa = Math.asin(r_det/r_ch)
+    alfa = (alfa * 180)/Math.PI
+    alfa *= 2 // угол большого треугольника в градусах
+    let a = +max_faska45.value / (2 * r_ch)
+    let b = Math.acos(a)
+    b = ((b * 180)/Math.PI) * 2
+    b = 180 - b // угол малого тр-ка
+    let c = alfa - (2 * b)
+    c = (Math.PI * c) / 180
+    let o2 = r_ch * (Math.sqrt(2- 2* Math.cos(c)))
+    o2 = o2/2
+    temp45_1 = r_det - o2 // 1-й катет
+    b = Math.acos(temp45_1/ +max_faska45.value)
+    b = (b * 180)/Math.PI // угол фаски
+    out_text.innerText = ' С данным R, угол = ' + b.toFixed(2) + ' град.'
+    a = Math.sqrt(Math.pow(r_ch, 2) - Math.pow(o2, 2))
+    a = a - d // 2-й катет
+    let prip = +t_f45.value + a // новый катет
+    b = (b * Math.PI)/180
+    d = prip/Math.sin(b)
+    text2_out.innerText = 'Фаска с прип. = ' + d.toFixed(3) + 'мм'
+  }
+
+})
+
+
+
+
 let dia1 = document.querySelector('.diamDet');
 let dia2 = document.querySelector('.diamProb');
 let cvet1 = document.querySelector('.nDet');
