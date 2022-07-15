@@ -73,7 +73,7 @@ btn_cls45.addEventListener('click', () => {
   r_chash.value = ''
 
 })
-
+//! формула расчета фаски с припуском
 btn_res45.addEventListener('click', () =>{
   if(chek_45.checked){
     temp45_1 = +dia_f45.value * 0.7
@@ -106,7 +106,6 @@ btn_res45.addEventListener('click', () =>{
     d = prip/Math.sin(b)
     text2_out.innerText = 'Фаска с прип. = ' + d.toFixed(3) + 'мм'
   }
-
 })
 
 
@@ -128,9 +127,18 @@ for (let i = 0; i < btn_module.length; i++){
   btn_module[i].onclick = function(event) {
     if(event.target.classList.contains('start')){
       this.lastElementChild.classList.toggle('hides')
+      if(event.target.dataset.text == '0'){
+        event.target.innerText = 'Закрыть'
+        event.target.dataset.text = '1'
+      } else {
+        event.target.innerText = 'Открыть'
+        event.target.dataset.text = '0'
+      }
+      // console.log(event.target.dataset.text)
     }
   }
 }
+
 //! параллакс
 const layers = document.querySelectorAll('.layer')
 const globLeft = document.querySelector('#layer').getBoundingClientRect().left;

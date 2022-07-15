@@ -454,17 +454,17 @@ span {
 
 .img-1 {
   background-image: url(../img/test_1.png);
-  background-size: 100%;
+  background-size: cover;
 }
 
 .img-2 {
   background-image: url(../img/test_2.png);
-  background-size: 100%;
+  background-size: cover;
 }
 
 .img-3 {
   background-image: url(../img/test_3.jpg);
-  background-size: 100%;
+  background-size: cover;
 }
 
 .cardThree {
@@ -483,6 +483,7 @@ span {
 .start {
   padding: 4px 6px;
   border-radius: 20px;
+  width: 100px;
 }
 
 .modalWindow {
